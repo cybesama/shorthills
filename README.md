@@ -1,39 +1,104 @@
-# Legal OKF ingestion
+# Legal OKF — Hybrid Search & Citation-Graph RAG over US Legal & Tax Documents
 
-A page-faithful ingestion pipeline for US acts, judgments, commentary, and tax
-documents. It downloads public HTTP(S) sources and produces:
+A retrieval-augmented Q&A system over 95 US legal and tax documents (Acts,
+Supreme Court judgments, legal commentary, and IRS publications): page-faithful
+ingestion, hybrid (keyword/vector/RRF) search, 1-hop citation-graph expansion,
+and cited, LLM-generated answers — evaluated against a 40-item golden set.
 
-- an OKF v0.1 bundle (`okf/**/*.md`);
-- document and page-aware chunk JSONL for Elasticsearch/BM25 and vector search;
-- citation nodes and `CITES` edges for graph import;
-- stable document/chunk IDs, source URLs, hashes, page numbers, and character offsets.
+See `ARCHITECTURE.md` for the full pipeline diagram and design decisions, and
+`evaluation_assignment/evaluation_report.md` for the evaluation results.
 
-## Install and run
+## Live demo
+
+- **UI**: https://shorthills.vercel.app
+- **API**: https://shorthills-api.onrender.com (`/health`, `/search`, `/answer`)
+
+## Project layout
+
+```
+legal_ingest/       Ingestion pipeline, search, answer generation, evaluation
+static/index.html   Single-page demo UI (deployed separately on Vercel)
+config/             Elasticsearch mapping + hybrid-query template
+examples/           Manifests: a smoke-test source and the full 100-doc corpus
+output/okf/          OKF markdown bundle (extracted, page-faithful documents)
+output/graph_*.jsonl Citation graph (nodes/edges) — loaded by /answer at runtime
+golden_set.json/csv  40-item evaluation golden set
+evaluation_assignment/  Evaluation report (retrieval accuracy, faithfulness)
+tests/              Unit tests
+Dockerfile           Render deployment (API only)
+render.yaml          Render Blueprint (one-click deploy config)
+```
+
+## Run the API locally
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+pip install -e '.[api,elastic]'
+```
+
+Create a `.env` (never committed) with:
+
+```
+ELASTIC_URL=...
+ELASTIC_API_KEY=...
+ELASTIC_INDEX=legal-chunks-v1
+OPENAI_API_KEY=...
+ALLOWED_ORIGINS=http://localhost:3000   # or * for local dev
+```
+
+```bash
+uvicorn legal_ingest.api:app --reload
+```
+
+Serves `/search`, `/answer`, `/health`, and the demo UI at `/` (same-origin,
+no separate deploy needed for local use).
+
+## Ingest the corpus
+
+```bash
 pip install -e '.[dev]'
-legal-ingest ingest --manifest examples/sources.yaml --output output
+legal-ingest ingest --manifest examples/sources.yaml --output output   # smoke test
 pytest
 ```
 
-For scanned PDFs, install `.[ocr]` and pass `--ocr`. Embeddings are generated via
-the OpenAI embeddings API (requires `OPENAI_API_KEY`):
+For scanned PDFs, install `.[ocr]` and pass `--ocr`. Embeddings are generated
+via the OpenAI embeddings API (requires `OPENAI_API_KEY`):
 
 ```bash
 pip install -e '.[api]'
 legal-ingest ingest \
-  --manifest examples/sources.yaml \
+  --manifest examples/corpus_100.yaml \
   --output output \
-  --embedding-model text-embedding-3-small
+  --embedding-model text-embedding-3-small \
+  --elastic-url "$ELASTIC_URL"
 ```
 
-The included Elasticsearch mapping expects 1536-dimensional vectors (matching
-`text-embedding-3-small`). Change `dims` if you select another model. Create the index
-with `config/elasticsearch-index.json`, then pass `--elastic-url`.
+The Elasticsearch mapping expects 1536-dimensional vectors (matching
+`text-embedding-3-small`). Change `dims` in `config/elasticsearch-index.json`
+if you select another model.
 
-## Manifest
+## Evaluate against the golden set
+
+```bash
+legal-ingest evaluate --golden-set golden_set.json --output evaluation_assignment
+```
+
+Runs retrieval-accuracy (Hit@k) and faithfulness checks (citation grounding +
+LLM-judged verdicts) across all golden-set items, writing
+`evaluation_report.{json,md}`. Faithfulness verdicts are left blank unless
+`ANTHROPIC_API_KEY` is set; otherwise fill them in via
+`legal_ingest.evaluate.apply_manual_judgments`.
+
+## Deployment
+
+Backend (FastAPI + Elasticsearch client) deploys on Render from the included
+`Dockerfile`/`render.yaml`; the static UI deploys separately on Vercel (root
+directory `static/`) and talks to the Render API over CORS
+(`ALLOWED_ORIGINS` env var on Render must match the Vercel origin exactly,
+including scheme). See `ARCHITECTURE.md` for the full request flow.
+
+## Manifest format
 
 Each source explicitly records its legal class and known authoritative metadata:
 
@@ -64,8 +129,7 @@ corpus_policy:
 
 This implements 80% Acts/Judgments/POV and 20% tax documents, with the non-tax
 80 split as evenly as integer counts allow. Ingestion validates the complete
-manifest before downloading anything. Change the three non-tax counts if the
-assignment owner specifies a different internal split, but keep their sum at 80.
+manifest before downloading anything.
 
 ## Accuracy and citation contract
 
@@ -75,7 +139,7 @@ the same as PDF page indices, so both the one-based `page_number` and a
 physical pagination; those formats are marked `*_logical_page` and must not be
 presented to users as printed-page citations.
 
-Chunks do not cross page boundaries. A generated answer should cite at least:
+Chunks do not cross page boundaries. Every generated answer cites, per claim:
 `title`, `source_url`, `page_start`, `page_end`, and `content_sha256`. The hash
 lets the application prove which downloaded source version supported an answer.
 
@@ -85,19 +149,22 @@ should add CourtListener/CAP/Crossref-style authority resolution and human revie
 
 ## Outputs and search
 
-`chunks.jsonl` is the shared indexing record. Use text fields for BM25 and the
-`embedding` field for kNN. `config/hybrid-query.json` demonstrates reciprocal
-rank fusion (RRF), avoiding incomparable raw BM25 and cosine scores.
+Chunks live in Elasticsearch (`legal-chunks-v1`) with both a `text` field (BM25)
+and an `embedding` field (kNN). `config/hybrid-query.json` demonstrates
+reciprocal rank fusion (RRF), avoiding incomparable raw BM25 and cosine scores.
+All three modes (keyword/vector/hybrid) are independently selectable via
+`/search`'s `mode` parameter.
 
 `graph_nodes.jsonl` and `graph_edges.jsonl` can be loaded into Neo4j, Amazon
 Neptune, or Elasticsearch graph workflows. Unresolved citations become explicit
-citation nodes; matching an `official_citation` resolves them to ingested
-documents.
+citation-stub nodes; matching an `official_citation` resolves them to ingested
+documents. `/answer` uses this graph for 1-hop expansion, re-ranked by query
+relevance before capping.
 
-OKF is the portable knowledge representation, not the search engine. Each concept
-is conformant Markdown with required `type` frontmatter and ordinary links. The
-namespaced `legal` object is a backward-compatible domain extension carrying
-provenance needed by legal RAG.
+OKF is the portable knowledge representation, not the search engine. Each
+concept is conformant Markdown with required `type` frontmatter and ordinary
+links. The namespaced `legal` object is a backward-compatible domain extension
+carrying provenance needed by legal RAG.
 
 Only ingest material you are entitled to copy and index. Respect site terms,
 robots policies, rate limits, copyright, and privacy obligations.
