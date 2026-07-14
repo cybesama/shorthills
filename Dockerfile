@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY pyproject.toml ./
 COPY legal_ingest ./legal_ingest
-RUN pip install --no-cache-dir -e '.[api,embeddings,elastic]'
+RUN pip install --no-cache-dir -e '.[api,elastic]'
 
 COPY static ./static
 COPY output/graph_nodes.jsonl output/graph_edges.jsonl ./output/

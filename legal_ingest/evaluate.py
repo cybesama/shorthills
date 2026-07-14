@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 from .answer import generate_answer
+from .embeddings import embed_query
 from .graph import expand_via_citation_graph
 from .search import SearchMode, run_search
 
@@ -33,16 +34,15 @@ def load_golden_set(path: Path) -> list[dict[str, Any]]:
 def retrieval_hit(
     client: Any,
     index: str,
-    embedder: Any,
+    openai_client: Any,
+    embedding_model: str,
     mode: SearchMode,
     query: str,
     expected_document_id: str,
     *,
     k: int,
 ) -> bool:
-    query_vector = (
-        None if mode is SearchMode.KEYWORD else embedder.encode(query, normalize_embeddings=True).tolist()
-    )
+    query_vector = None if mode is SearchMode.KEYWORD else embed_query(openai_client, query, model=embedding_model)
     hits = run_search(client, index, mode, query, query_vector, size=k)
     return any(hit["document_id"] == expected_document_id for hit in hits)
 
@@ -51,7 +51,8 @@ def evaluate_retrieval(
     golden_set: list[dict[str, Any]],
     client: Any,
     index: str,
-    embedder: Any,
+    openai_client: Any,
+    embedding_model: str,
     *,
     k: int = 5,
     modes: tuple[SearchMode, ...] = (SearchMode.HYBRID,),
@@ -65,7 +66,7 @@ def evaluate_retrieval(
         }
         for mode in modes:
             row[f"hit_{mode.value}"] = retrieval_hit(
-                client, index, embedder, mode, item["query"], item["source_document_id"], k=k
+                client, index, openai_client, embedding_model, mode, item["query"], item["source_document_id"], k=k
             )
         rows.append(row)
 
@@ -125,8 +126,8 @@ def evaluate_faithfulness(
     golden_set: list[dict[str, Any]],
     client: Any,
     index: str,
-    embedder: Any,
     openai_client: Any,
+    embedding_model: str,
     anthropic_client: Any | None,
     *,
     k: int,
@@ -144,7 +145,7 @@ def evaluate_faithfulness(
     """
     rows: list[dict[str, Any]] = []
     for item in golden_set:
-        query_vector = embedder.encode(item["query"], normalize_embeddings=True).tolist()
+        query_vector = embed_query(openai_client, item["query"], model=embedding_model)
         anchors = run_search(client, index, answer_mode, item["query"], query_vector, size=k)
         expansions = (
             expand_via_citation_graph(client, index, answer_mode, item["query"], query_vector, anchors, graph)
@@ -326,7 +327,6 @@ def run_evaluation(
     use_graph: bool = True,
 ) -> dict[str, Any]:
     from elasticsearch import Elasticsearch
-    from sentence_transformers import SentenceTransformer
 
     from .graph import load_citation_graph
 
@@ -334,16 +334,17 @@ def run_evaluation(
     client = (
         Elasticsearch(elastic_url, api_key=elastic_api_key) if elastic_api_key else Elasticsearch(elastic_url)
     )
-    embedder = SentenceTransformer(embedding_model)
     graph = load_citation_graph(graph_dir) if graph_dir else {}
 
-    retrieval_rows, retrieval_summary = evaluate_retrieval(golden_set, client, elastic_index, embedder, k=k)
+    retrieval_rows, retrieval_summary = evaluate_retrieval(
+        golden_set, client, elastic_index, openai_client, embedding_model, k=k
+    )
     faithfulness_rows, faithfulness_summary = evaluate_faithfulness(
         golden_set,
         client,
         elastic_index,
-        embedder,
         openai_client,
+        embedding_model,
         anthropic_client,
         k=k,
         answer_mode=answer_mode,

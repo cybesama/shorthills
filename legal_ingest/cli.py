@@ -26,7 +26,7 @@ def ingest(
     ocr: Annotated[bool, typer.Option(help="OCR image-only PDF pages")] = False,
     embedding_model: Annotated[
         str | None,
-        typer.Option(help="SentenceTransformers model; omit to embed in Elasticsearch"),
+        typer.Option(help="OpenAI embeddings model; omit to embed in Elasticsearch"),
     ] = None,
     elastic_url: Annotated[str | None, typer.Option()] = None,
     elastic_index: Annotated[str, typer.Option()] = "legal-chunks-v1",
@@ -59,7 +59,7 @@ def evaluate(
     output: Annotated[Path, typer.Option()] = Path("evaluation_assignment"),
     elastic_url: Annotated[str | None, typer.Option()] = None,
     elastic_index: Annotated[str, typer.Option()] = "legal-chunks-v1",
-    embedding_model: Annotated[str, typer.Option()] = "sentence-transformers/all-mpnet-base-v2",
+    embedding_model: Annotated[str, typer.Option()] = "text-embedding-3-small",
     k: Annotated[int, typer.Option(help="Top-k for retrieval-accuracy and answer context")] = 5,
     answer_mode: Annotated[SearchMode, typer.Option(help="Search mode used to generate answers for faithfulness")] = SearchMode.HYBRID,
     graph_dir: Annotated[Path, typer.Option(help="Directory containing graph_nodes.jsonl/graph_edges.jsonl")] = Path("output"),

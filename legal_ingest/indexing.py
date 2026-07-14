@@ -11,19 +11,16 @@ from .models import Chunk, GraphEdge, GraphNode, LegalDocument
 
 def embed_chunks(chunks: list[Chunk], model_name: str) -> list[Chunk]:
     try:
-        from sentence_transformers import SentenceTransformer
+        from openai import OpenAI
     except ImportError as exc:
-        raise RuntimeError(
-            "Install with: pip install 'legal-okf-ingest[embeddings]'"
-        ) from exc
-    model = SentenceTransformer(model_name)
-    vectors = model.encode(
-        [chunk.text for chunk in chunks],
-        normalize_embeddings=True,
-        show_progress_bar=True,
-    )
+        raise RuntimeError("Install with: pip install 'legal-okf-ingest[api]'") from exc
+
+    from .embeddings import embed_texts
+
+    client = OpenAI()
+    vectors = embed_texts(client, [chunk.text for chunk in chunks], model=model_name)
     return [
-        chunk.model_copy(update={"embedding": vector.tolist()})
+        chunk.model_copy(update={"embedding": vector})
         for chunk, vector in zip(chunks, vectors, strict=True)
     ]
 

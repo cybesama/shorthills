@@ -18,18 +18,19 @@ legal-ingest ingest --manifest examples/sources.yaml --output output
 pytest
 ```
 
-For scanned PDFs, install `.[ocr]` and pass `--ocr`. For local embeddings:
+For scanned PDFs, install `.[ocr]` and pass `--ocr`. Embeddings are generated via
+the OpenAI embeddings API (requires `OPENAI_API_KEY`):
 
 ```bash
-pip install -e '.[embeddings]'
+pip install -e '.[api]'
 legal-ingest ingest \
   --manifest examples/sources.yaml \
   --output output \
-  --embedding-model sentence-transformers/all-mpnet-base-v2
+  --embedding-model text-embedding-3-small
 ```
 
-The included Elasticsearch mapping expects 768-dimensional vectors (matching
-`all-mpnet-base-v2`). Change `dims` if you select another model. Create the index
+The included Elasticsearch mapping expects 1536-dimensional vectors (matching
+`text-embedding-3-small`). Change `dims` if you select another model. Create the index
 with `config/elasticsearch-index.json`, then pass `--elastic-url`.
 
 ## Manifest

@@ -12,6 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from .answer import generate_answer
+from .embeddings import embed_query
 from .graph import expand_via_citation_graph, load_citation_graph
 from .search import SearchMode, run_search
 
@@ -20,7 +21,6 @@ load_dotenv()
 ELASTIC_URL = os.environ.get("ELASTIC_URL", "http://localhost:9200")
 ELASTIC_API_KEY = os.environ.get("ELASTIC_API_KEY")
 ELASTIC_INDEX = os.environ.get("ELASTIC_INDEX", "legal-chunks-v1")
-EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
 OUTPUT_DIR = Path(os.environ.get("LEGAL_OUTPUT_DIR", "output"))
 # Comma-separated list, e.g. "https://shorthills.vercel.app,http://localhost:3000"
 ALLOWED_ORIGINS = [origin.strip() for origin in os.environ.get("ALLOWED_ORIGINS", "*").split(",")]
@@ -32,12 +32,10 @@ _state: dict[str, Any] = {}
 async def lifespan(app: FastAPI):
     from elasticsearch import Elasticsearch
     from openai import OpenAI
-    from sentence_transformers import SentenceTransformer
 
     _state["client"] = (
         Elasticsearch(ELASTIC_URL, api_key=ELASTIC_API_KEY) if ELASTIC_API_KEY else Elasticsearch(ELASTIC_URL)
     )
-    _state["embedder"] = SentenceTransformer(EMBEDDING_MODEL)
     _state["openai"] = OpenAI()
     _state["graph"] = load_citation_graph(OUTPUT_DIR)
     yield
@@ -97,7 +95,7 @@ def health() -> dict[str, str]:
 def _embed(request: SearchRequest | AnswerRequest) -> list[float] | None:
     if request.mode is SearchMode.KEYWORD:
         return None
-    return _state["embedder"].encode(request.query, normalize_embeddings=True).tolist()
+    return embed_query(_state["openai"], request.query)
 
 
 def _run(
