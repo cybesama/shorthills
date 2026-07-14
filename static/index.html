@@ -238,6 +238,9 @@
 </main>
 
 <script>
+// Same-origin when the UI is served by the FastAPI app itself (local dev, or a
+// single combined Render deploy). Set this to the Render service URL when the
+// UI is deployed separately (e.g. on Vercel) -- e.g. "https://shorthills-api.onrender.com".
 const API_BASE = "";
 
 const els = {

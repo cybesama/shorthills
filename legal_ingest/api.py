@@ -7,6 +7,7 @@ from typing import Any
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -21,6 +22,8 @@ ELASTIC_API_KEY = os.environ.get("ELASTIC_API_KEY")
 ELASTIC_INDEX = os.environ.get("ELASTIC_INDEX", "legal-chunks-v1")
 EMBEDDING_MODEL = os.environ.get("EMBEDDING_MODEL", "sentence-transformers/all-mpnet-base-v2")
 OUTPUT_DIR = Path(os.environ.get("LEGAL_OUTPUT_DIR", "output"))
+# Comma-separated list, e.g. "https://shorthills.vercel.app,http://localhost:3000"
+ALLOWED_ORIGINS = [origin.strip() for origin in os.environ.get("ALLOWED_ORIGINS", "*").split(",")]
 
 _state: dict[str, Any] = {}
 
@@ -42,6 +45,12 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Legal OKF Search", lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
+)
 
 
 class SearchRequest(BaseModel):
