@@ -1,0 +1,14 @@
+## Omit corpus_policy for small development/smoke-test manifests.
+# corpus_policy:
+#   total_documents: 100
+#   required_counts:
+#     act: 27
+#     court_judgment: 27
+#     pov: 26
+#     tax_document: 20
+sources:
+  - url: https://www.irs.gov/pub/irs-pdf/p15.pdf
+    document_type: tax_document
+    title: "Publication 15 (Circular E), Employer's Tax Guide"
+    jurisdiction: US
+    tags: [irs, employment-tax]

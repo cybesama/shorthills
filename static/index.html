@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Legal Research Assistant</title>
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --panel: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b6b6f;
+    --border: #e2e2e0;
+    --accent: #1f4b8f;
+    --accent-soft: #eaf0fb;
+    --graph: #7a4fb0;
+    --graph-soft: #f2ecf9;
+    --error: #b3261e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #17181a;
+      --panel: #222325;
+      --text: #eceef0;
+      --muted: #9a9ca0;
+      --border: #35363a;
+      --accent: #7ea6ec;
+      --accent-soft: #1e2b40;
+      --graph: #c39bf0;
+      --graph-soft: #2b2237;
+      --error: #f2867d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+  }
+  h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+  .subtitle { color: var(--muted); margin: 0 0 1.75rem; font-size: 0.95rem; }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 4.5rem;
+    resize: vertical;
+    font: inherit;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+    align-items: center;
+  }
+  .controls label {
+    font-size: 0.82rem;
+    color: var(--muted);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  select, input[type="number"] {
+    font: inherit;
+    padding: 0.4rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+  }
+  .checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .spacer { flex: 1; }
+
+  button {
+    font: inherit;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+    cursor: pointer;
+  }
+  button.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+    font-weight: 600;
+  }
+  button:disabled { opacity: 0.55; cursor: default; }
+
+  #status {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  #status.error { color: var(--error); }
+
+  #results { margin-top: 1.5rem; display: none; }
+
+  .answer-box {
+    white-space: pre-wrap;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .answer-box mark {
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 4px;
+    padding: 0 0.15rem;
+    font-weight: 600;
+  }
+
+  h2.section-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin: 1.75rem 0 0.75rem;
+  }
+
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.75rem;
+    background: var(--panel);
+  }
+  .card-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .card-index {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 0.85rem;
+  }
+  .card-title { font-weight: 600; }
+  .badge {
+    font-size: 0.72rem;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    text-transform: capitalize;
+  }
+  .badge.graph {
+    background: var(--graph-soft);
+    color: var(--graph);
+  }
+  .card-meta {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+  .card-snippet {
+    margin-top: 0.5rem;
+    font-size: 0.88rem;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  .card a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Legal Research Assistant</h1>
+  <p class="subtitle">Hybrid search + citation-graph RAG over US Acts, court judgments, commentary, and tax documents.</p>
+
+  <div class="panel">
+    <textarea id="query" placeholder="Ask a legal or tax question, e.g. &quot;What did Brown v. Board say about the separate but equal doctrine?&quot;"></textarea>
+    <div class="controls">
+      <label>Mode
+        <select id="mode">
+          <option value="hybrid" selected>Hybrid</option>
+          <option value="keyword">Keyword</option>
+          <option value="vector">Vector</option>
+        </select>
+      </label>
+      <label>Document type
+        <select id="documentType">
+          <option value="">Any</option>
+          <option value="act">Act</option>
+          <option value="court_judgment">Court judgment</option>
+          <option value="pov">Commentary (POV)</option>
+          <option value="tax_document">Tax document</option>
+        </select>
+      </label>
+      <label>Results
+        <input type="number" id="size" value="5" min="1" max="20" style="width:4.5rem" />
+      </label>
+      <label class="checkbox-row" style="align-self:flex-end">
+        <input type="checkbox" id="useGraph" checked />
+        Expand via citation graph
+      </label>
+      <div class="spacer"></div>
+      <button id="searchBtn">Search only</button>
+      <button id="askBtn" class="primary">Ask</button>
+    </div>
+  </div>
+
+  <div id="status"></div>
+
+  <div id="results">
+    <div id="answerSection" style="display:none">
+      <h2 class="section-label">Answer</h2>
+      <div class="panel answer-box" id="answerText"></div>
+    </div>
+    <h2 class="section-label" id="sourcesLabel">Sources</h2>
+    <div id="sourcesList"></div>
+  </div>
+</main>
+
+<script>
+const API_BASE = "";
+
+const els = {
+  query: document.getElementById("query"),
+  mode: document.getElementById("mode"),
+  documentType: document.getElementById("documentType"),
+  size: document.getElementById("size"),
+  useGraph: document.getElementById("useGraph"),
+  searchBtn: document.getElementById("searchBtn"),
+  askBtn: document.getElementById("askBtn"),
+  status: document.getElementById("status"),
+  results: document.getElementById("results"),
+  answerSection: document.getElementById("answerSection"),
+  answerText: document.getElementById("answerText"),
+  sourcesLabel: document.getElementById("sourcesLabel"),
+  sourcesList: document.getElementById("sourcesList"),
+};
+
+const DOC_TYPE_LABEL = {
+  act: "Act",
+  court_judgment: "Court judgment",
+  pov: "Commentary",
+  tax_document: "Tax document",
+};
+
+function pageLabel(chunk) {
+  return chunk.page_start === chunk.page_end
+    ? `p. ${chunk.page_start}`
+    : `pp. ${chunk.page_start}-${chunk.page_end}`;
+}
+
+function renderCitationCard(chunk, index) {
+  const badges = [`<span class="badge">${DOC_TYPE_LABEL[chunk.document_type] || chunk.document_type}</span>`];
+  if (chunk.via_graph) {
+    badges.push(`<span class="badge graph">via citation graph</span>`);
+  }
+  const snippet = chunk.text
+    ? `<div class="card-snippet">${escapeHtml(chunk.text.slice(0, 320))}${chunk.text.length > 320 ? "…" : ""}</div>`
+    : "";
+  return `
+    <div class="card">
+      <div class="card-head">
+        ${index !== null ? `<span class="card-index">SOURCE ${index}</span>` : ""}
+        <span class="card-title">${escapeHtml(chunk.title)}</span>
+        ${badges.join(" ")}
+      </div>
+      <div class="card-meta">
+        ${pageLabel(chunk)} &middot; score ${chunk.score.toFixed(3)}
+        &middot; <a href="${chunk.source_url}" target="_blank" rel="noopener">source PDF</a>
+        &middot; sha256 ${chunk.content_sha256.slice(0, 12)}&hellip;
+      </div>
+      ${snippet}
+    </div>`;
+}
+
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+function highlightSources(text) {
+  return escapeHtml(text).replace(/\[SOURCE (\d+)\]/g, "<mark>[SOURCE $1]</mark>");
+}
+
+function setStatus(message, isError) {
+  els.status.textContent = message || "";
+  els.status.classList.toggle("error", Boolean(isError));
+}
+
+function setBusy(busy) {
+  els.searchBtn.disabled = busy;
+  els.askBtn.disabled = busy;
+}
+
+async function callApi(path, body) {
+  const response = await fetch(API_BASE + path, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(data.detail || `Request failed (${response.status})`);
+  }
+  return data;
+}
+
+function baseRequest() {
+  return {
+    query: els.query.value.trim(),
+    mode: els.mode.value,
+    size: Number(els.size.value) || 5,
+    document_type: els.documentType.value || null,
+  };
+}
+
+async function runSearch() {
+  const request = baseRequest();
+  if (!request.query) return setStatus("Enter a question first.", true);
+  setBusy(true);
+  setStatus("Searching…");
+  els.results.style.display = "none";
+  try {
+    const chunks = await callApi("/search", request);
+    els.answerSection.style.display = "none";
+    els.sourcesLabel.textContent = `Results (${chunks.length})`;
+    els.sourcesList.innerHTML = chunks.map((c) => renderCitationCard(c, null)).join("") || "<p>No results.</p>";
+    els.results.style.display = "block";
+    setStatus("");
+  } catch (err) {
+    setStatus(err.message, true);
+  } finally {
+    setBusy(false);
+  }
+}
+
+async function runAnswer() {
+  const request = { ...baseRequest(), use_graph: els.useGraph.checked };
+  if (!request.query) return setStatus("Enter a question first.", true);
+  setBusy(true);
+  setStatus("Retrieving sources and generating an answer…");
+  els.results.style.display = "none";
+  try {
+    const data = await callApi("/answer", request);
+    els.answerText.innerHTML = highlightSources(data.answer);
+    els.answerSection.style.display = "block";
+    els.sourcesLabel.textContent = `Sources (${data.citations.length})`;
+    els.sourcesList.innerHTML =
+      data.citations.map((c, i) => renderCitationCard(c, i + 1)).join("") || "<p>No sources.</p>";
+    els.results.style.display = "block";
+    setStatus("");
+  } catch (err) {
+    setStatus(err.message, true);
+  } finally {
+    setBusy(false);
+  }
+}
+
+els.searchBtn.addEventListener("click", runSearch);
+els.askBtn.addEventListener("click", runAnswer);
+els.query.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" && (event.metaKey || event.ctrlKey)) {
+    runAnswer();
+  }
+});
+</script>
+</body>
+</html>

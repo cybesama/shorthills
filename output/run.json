@@ -1,0 +1,31 @@
+{
+  "documents": 95,
+  "chunks": 38305,
+  "failures": [
+    {
+      "url": "https://www.law.cornell.edu/wex/corporate_law",
+      "title": "Corporate Law",
+      "error": "Client error '404 Not Found' for url 'https://www.law.cornell.edu/wex/corporate_law'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    },
+    {
+      "url": "https://www.law.cornell.edu/wex/labor_law",
+      "title": "Labor Law",
+      "error": "Client error '404 Not Found' for url 'https://www.law.cornell.edu/wex/labor_law'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p51.pdf",
+      "title": "Publication 51, Agricultural Employer's Tax Guide",
+      "error": "Client error '404 Not Found' for url 'https://www.irs.gov/pub/irs-pdf/p51.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p80.pdf",
+      "title": "Publication 80, Federal Tax Guide for Employers in U.S. Virgin Islands, Guam, American Samoa, and CNMI",
+      "error": "Client error '404 Not Found' for url 'https://www.irs.gov/pub/irs-pdf/p80.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-pdf/p521.pdf",
+      "title": "Publication 521, Moving Expenses",
+      "error": "Client error '404 Not Found' for url 'https://www.irs.gov/pub/irs-pdf/p521.pdf'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    }
+  ]
+}

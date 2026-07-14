@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "legal-okf-ingest"
+version = "0.1.0"
+description = "Page-faithful US legal document ingestion for OKF, Elasticsearch, vector, and graph search"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "httpx>=0.27",
+  "pydantic>=2.7",
+  "pypdf>=5.0",
+  "python-docx>=1.1",
+  "PyYAML>=6.0",
+  "typer>=0.12",
+]
+
+[project.optional-dependencies]
+ocr = ["pymupdf>=1.24", "pytesseract>=0.3.13", "Pillow>=10.0"]
+embeddings = ["sentence-transformers>=3.0"]
+elastic = ["elasticsearch>=8.14,<9"]
+api = ["fastapi>=0.115", "uvicorn>=0.30", "openai>=1.0", "anthropic>=0.110", "python-dotenv>=1.0"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+legal-ingest = "legal_ingest.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["legal_ingest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.claude/
+
+# Regenerable ingestion artifacts: large raw exports superseded by the OKF bundle
+# (output/okf/) and needed only to re-index Elasticsearch. Re-create via
+# `legal-ingest ingest --manifest examples/corpus_100.yaml --output output`.
+output/chunks.jsonl
+output/documents.jsonl

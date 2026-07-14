@@ -1,0 +1,2911 @@
+{
+  "golden_set_size": 40,
+  "k": 5,
+  "answer_mode_used_for_faithfulness": "hybrid",
+  "retrieval_accuracy": {
+    "hybrid": 0.975
+  },
+  "retrieval_rows": [
+    {
+      "id": "gs-01",
+      "query": "Does racial segregation in public schools violate the Equal Protection Clause even if the physical facilities are equal?",
+      "expected_document": "Brown v. Board of Education",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-02",
+      "query": "What must police do before using statements from a custodial interrogation at trial, according to Miranda v. Arizona?",
+      "expected_document": "Miranda v. Arizona",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-03",
+      "query": "What did the Supreme Court hold about the scope of the Second Amendment in District of Columbia v. Heller?",
+      "expected_document": "District of Columbia v. Heller",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-04",
+      "query": "What did the Supreme Court hold about the EPA's 'plantwide' definition of stationary source in Chevron v. NRDC?",
+      "expected_document": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-05",
+      "query": "Did burning the American flag as a form of political protest count as protected expression under the First Amendment in Texas v. Johnson?",
+      "expected_document": "Texas v. Johnson",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-06",
+      "query": "In United States v. Nixon, did the Court treat the dispute between the Special Prosecutor and the President as a non-justiciable 'intra-branch dispute'?",
+      "expected_document": "United States v. Nixon",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-07",
+      "query": "What Code does the Tax Cuts and Jobs Act (Pub. L. 115-97) refer to when it amends 'the Code'?",
+      "expected_document": "Tax Cuts and Jobs Act",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-08",
+      "query": "What is the stated purpose of the Dodd-Frank Wall Street Reform and Consumer Protection Act?",
+      "expected_document": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-09",
+      "query": "What was the stated purpose of the USA PATRIOT Act of 2001?",
+      "expected_document": "USA PATRIOT Act",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-10",
+      "query": "What is the Sarbanes-Oxley Act of 2002 intended to protect, and how?",
+      "expected_document": "Sarbanes-Oxley Act of 2002",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-11",
+      "query": "What did HIPAA (the Health Insurance Portability and Accountability Act of 1996) amend, and what were its goals?",
+      "expected_document": "Health Insurance Portability and Accountability Act of 1996",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-12",
+      "query": "What does the Fourth Amendment protect against, according to the Wex commentary?",
+      "expected_document": "Fourth Amendment",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-13",
+      "query": "What rights does the First Amendment protect, according to the Wex commentary?",
+      "expected_document": "First Amendment",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-14",
+      "query": "What is the constitutional source of the 'due process' requirement, and to whom does it apply?",
+      "expected_document": "Due Process",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-15",
+      "query": "What are the basic elements required for an agreement to be a legally enforceable contract, according to the Wex commentary?",
+      "expected_document": "Contract",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-16",
+      "query": "What is the definition of negligence, according to the Wex commentary?",
+      "expected_document": "Negligence",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-17",
+      "query": "What are the Social Security and Medicare tax rates and the Social Security wage base limit described in IRS Publication 15 (Circular E)?",
+      "expected_document": "Publication 15 (Circular E), Employer's Tax Guide",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-18",
+      "query": "What is the 2025 standard deduction for a single filer under age 65, according to IRS Publication 501?",
+      "expected_document": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-19",
+      "query": "What change did the One Big Beautiful Bill Act (OBBBA), P.L. 119-21, make to bonus depreciation according to Publication 463?",
+      "expected_document": "Publication 463, Travel, Gift, and Car Expenses",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-20",
+      "query": "What is the self-employment (SE) tax rate for 2025, and how is it broken down, according to IRS Publication 334?",
+      "expected_document": "Publication 334, Tax Guide for Small Business",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-21",
+      "query": "According to Brown v. Board of Education, what was the earlier Supreme Court doctrine that the Court's ruling on school segregation overturned, and where did that doctrine originate?",
+      "expected_document": "Brown v. Board of Education",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-22",
+      "query": "In Miranda v. Arizona, which earlier Supreme Court case did the Court rely on for the principle that appointment of counsel for indigent suspects is required?",
+      "expected_document": "Miranda v. Arizona",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-23",
+      "query": "What Fourth Amendment case does Miranda v. Arizona reference in discussing concerns about confessions obtained through unsupervised police interrogation?",
+      "expected_document": "Miranda v. Arizona",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-24",
+      "query": "In Regents of the University of California v. Bakke, which earlier case is cited as an example of the Court applying a lenient standard of review to a racial classification?",
+      "expected_document": "Regents of the University of California v. Bakke",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-25",
+      "query": "According to Regents of the University of California v. Bakke, what series of decisions leading up to Brown v. Board of Education addressed racial segregation before Brown itself was decided?",
+      "expected_document": "Regents of the University of California v. Bakke",
+      "hit_hybrid": false
+    },
+    {
+      "id": "gs-26",
+      "query": "In Planned Parenthood v. Casey, what earlier decision does the Court reaffirm regarding the State's obligation concerning the life or health of the mother?",
+      "expected_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-27",
+      "query": "What historically erroneous decision does Planned Parenthood v. Casey cite as an example of a doctrine that 'lasted 58 years' before being corrected?",
+      "expected_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-28",
+      "query": "What case does Planned Parenthood v. Casey cite as an example of the Court correctly correcting one of its own errors despite a generation having grown used to the earlier decision?",
+      "expected_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-29",
+      "query": "What earlier First Amendment case does Citizens United v. FEC cite for the principle that doubt should be resolved in favor of protecting speech rather than stifling it?",
+      "expected_document": "Citizens United v. Federal Election Commission",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-30",
+      "query": "According to Citizens United v. FEC, when did the Court first consider applying the First Amendment to speech restrictions other than prior restraints, and which case marked that point?",
+      "expected_document": "Citizens United v. Federal Election Commission",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-31",
+      "query": "What did the Supreme Court hold in Gideon v. Wainwright regarding the right to counsel for indigent defendants in state criminal trials?",
+      "expected_document": "Gideon v. Wainwright",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-32",
+      "query": "What did the Supreme Court hold in Mapp v. Ohio regarding evidence obtained through unconstitutional searches and seizures in state criminal trials?",
+      "expected_document": "Mapp v. Ohio",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-33",
+      "query": "What standard did the Supreme Court apply in Terry v. Ohio to justify a police officer's pat-down search of a suspect for weapons?",
+      "expected_document": "Terry v. Ohio",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-34",
+      "query": "What did the Supreme Court hold in Tinker v. Des Moines Independent Community School District regarding students wearing armbands to school as a form of protest?",
+      "expected_document": "Tinker v. Des Moines Independent Community School District",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-35",
+      "query": "What did the Supreme Court hold in Roe v. Wade regarding a woman's constitutional right of privacy and the decision to terminate a pregnancy?",
+      "expected_document": "Roe v. Wade",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-36",
+      "query": "What standard did the Supreme Court establish in New York Times Co. v. Sullivan for public officials seeking damages for defamatory statements about their official conduct?",
+      "expected_document": "New York Times Co. v. Sullivan",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-37",
+      "query": "What did the Supreme Court hold in Korematsu v. United States regarding the wartime exclusion order affecting persons of Japanese ancestry?",
+      "expected_document": "Korematsu v. United States",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-38",
+      "query": "What did the Supreme Court hold in Gibbons v. Ogden regarding the scope of Congress's power to regulate commerce among the states?",
+      "expected_document": "Gibbons v. Ogden",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-39",
+      "query": "What principle did the Supreme Court establish in McCulloch v. Maryland regarding a state's power to tax an instrumentality of the federal government?",
+      "expected_document": "McCulloch v. Maryland",
+      "hit_hybrid": true
+    },
+    {
+      "id": "gs-40",
+      "query": "What did the Supreme Court hold in Bush v. Gore regarding the manual recount of ballots ordered by the Florida Supreme Court?",
+      "expected_document": "Bush v. Gore",
+      "hit_hybrid": true
+    }
+  ],
+  "faithfulness_summary": {
+    "cited_expected_document_rate": 0.95,
+    "judged_count": 40,
+    "pending_manual_judgment": 0,
+    "graph_expansion_items": 10,
+    "graph_expansion_hit_rate": 0.9,
+    "faithful_rate": 0.9,
+    "partially_faithful_rate": 0.025,
+    "unfaithful_rate": 0.075
+  },
+  "faithfulness_rows": [
+    {
+      "id": "gs-01",
+      "query": "Does racial segregation in public schools violate the Equal Protection Clause even if the physical facilities are equal?",
+      "expected_document": "Brown v. Board of Education",
+      "expected_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "Yes. In Brown v. Board of Education, the Supreme Court held that segregating white and Black children in public schools solely on the basis of race, even where physical facilities and other tangible factors are equal, denies Black children the equal protection of the laws guaranteed by the Fourteenth Amendment.",
+      "generated_answer": "Yes, racial segregation in public schools violates the Equal Protection Clause even if the physical facilities are equal. The Supreme Court concluded that \"segregation of children in public schools solely on the basis of race, pursuant to state laws permitting or requiring such segregation, denies to Negro children the equal protection of the laws guaranteed by the Fourteenth Amendment, even though the physical facilities and other 'tangible' factors of white and Negro schools may be equal\" [SOURCE 4]. Additionally, the Court stated that \"the doctrine of 'separate but equal' has no place\" in public education, affirming that \"separate educational facilities are inherently unequal\" [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 6",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 2,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 13",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 3,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 11",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 4,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 1",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 5,
+          "title": "Equal Protection",
+          "source_url": "https://www.law.cornell.edu/wex/equal_protection",
+          "page": "p. 1",
+          "content_sha256": "4526d62b142c259af6257e436a0928ba5d1322442de9fc5f0c850fcf59ef70ef",
+          "document_id": "202a07e373bd5c754dd0eb1cdd24f728"
+        },
+        {
+          "index": 6,
+          "title": "Plessy v. Ferguson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep163/usrep163537/usrep163537.pdf",
+          "page": "p. 8",
+          "content_sha256": "1bd8154d5ed6e16f3fec76f0cd14286f57975b997cdadf749f9bb40446b683e2",
+          "document_id": "f894c21af6da3934f6285b504d4f1d18"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2,
+        4
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the ground truth holding with direct quotes, no unsupported additions."
+    },
+    {
+      "id": "gs-02",
+      "query": "What must police do before using statements from a custodial interrogation at trial, according to Miranda v. Arizona?",
+      "expected_document": "Miranda v. Arizona",
+      "expected_document_id": "208516a7f962568e815530beb6fd5356",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "Before interrogating a person in custody, police must clearly inform them that they have the right to remain silent, that anything they say can be used against them in court, that they have the right to consult a lawyer and have the lawyer present during interrogation, and that a lawyer will be appointed for them if they cannot afford one. Statements obtained without these warnings cannot be used by the prosecution.",
+      "generated_answer": "Before using statements from a custodial interrogation at trial, police must take certain procedural safeguards to ensure that the defendant's Fifth Amendment privilege against self-incrimination is protected. Specifically, the following must be observed:\n\n1. The person in custody must be clearly informed that he has the right to remain silent and that anything he says can be used against him in court.\n2. He must be informed that he has the right to consult with a lawyer and to have the lawyer present during interrogation. If he is indigent, a lawyer will be appointed to represent him.\n3. If the individual indicates that he wishes to remain silent, the interrogation must cease. If he indicates that he wants an attorney, the questioning must also cease until an attorney is present.\n4. In cases where a statement is taken without the presence of an attorney, the government has the burden to demonstrate that the defendant knowingly and intelligently waived his right to counsel.\n5. Answering some questions during interrogation does not constitute a waiver of the right to remain silent thereafter; he may invoke this right at any time [SOURCE 5].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 1",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 2,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 10",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 3,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 6",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 4,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 14",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 5,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 2",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 6,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 17",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        },
+        {
+          "index": 7,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 42",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        5
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches Miranda warning requirements; extra detail on cessation/waiver is accurate to the case."
+    },
+    {
+      "id": "gs-03",
+      "query": "What did the Supreme Court hold about the scope of the Second Amendment in District of Columbia v. Heller?",
+      "expected_document": "District of Columbia v. Heller",
+      "expected_document_id": "26bfdd8832efa930da6bb4d1cb110bdf",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that the Second Amendment protects an individual's right to possess a firearm unconnected with service in a militia, and to use that firearm for traditionally lawful purposes such as self-defense within the home.",
+      "generated_answer": "The Supreme Court held that the Second Amendment protects an individual right to possess a firearm unconnected with service in a militia and to use that arm for traditionally lawful purposes, such as self-defense within the home [SOURCE 1]. The Court emphasized that the Second Amendment right is not unlimited and does not imply a right to keep and carry any weapon in any manner for any purpose. However, it specifically ruled that the District of Columbia's total ban on handgun possession in the home violated the Second Amendment, as did the requirement that firearms in the home be kept nonfunctional [SOURCE 2]. Thus, the Court concluded that the District must permit individuals to register handguns and issue licenses for them, assuming they are not disqualified from exercising Second Amendment rights [SOURCE 3].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "District of Columbia v. Heller",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf",
+          "page": "p. 1",
+          "content_sha256": "8ea329fdac7403a11981eee4eadbf4e2f9f858551baa5e7ba9e095c413d2bd01",
+          "document_id": "26bfdd8832efa930da6bb4d1cb110bdf"
+        },
+        {
+          "index": 2,
+          "title": "District of Columbia v. Heller",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf",
+          "page": "p. 2",
+          "content_sha256": "8ea329fdac7403a11981eee4eadbf4e2f9f858551baa5e7ba9e095c413d2bd01",
+          "document_id": "26bfdd8832efa930da6bb4d1cb110bdf"
+        },
+        {
+          "index": 3,
+          "title": "District of Columbia v. Heller",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf",
+          "page": "p. 3",
+          "content_sha256": "8ea329fdac7403a11981eee4eadbf4e2f9f858551baa5e7ba9e095c413d2bd01",
+          "document_id": "26bfdd8832efa930da6bb4d1cb110bdf"
+        },
+        {
+          "index": 4,
+          "title": "District of Columbia v. Heller",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf",
+          "page": "p. 5",
+          "content_sha256": "8ea329fdac7403a11981eee4eadbf4e2f9f858551baa5e7ba9e095c413d2bd01",
+          "document_id": "26bfdd8832efa930da6bb4d1cb110bdf"
+        },
+        {
+          "index": 5,
+          "title": "District of Columbia v. Heller",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf",
+          "page": "p. 7",
+          "content_sha256": "8ea329fdac7403a11981eee4eadbf4e2f9f858551baa5e7ba9e095c413d2bd01",
+          "document_id": "26bfdd8832efa930da6bb4d1cb110bdf"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1,
+        2,
+        3
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "States the core Second Amendment holding correctly with accurate supporting detail."
+    },
+    {
+      "id": "gs-04",
+      "query": "What did the Supreme Court hold about the EPA's 'plantwide' definition of stationary source in Chevron v. NRDC?",
+      "expected_document": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+      "expected_document_id": "0f1e1011af4c5fc2f124503502d51d3d",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that the EPA's plantwide (bubble concept) definition of the statutory term 'stationary source' was a permissible construction of the Clean Air Act, since Congress had not directly addressed the precise question at issue and the agency's interpretation was reasonable.",
+      "generated_answer": "The Supreme Court in Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc. held that the respondents contended the text of the Act requires the EPA to use a dual definition of \"stationary source,\" meaning that if either a component of a plant or the plant as a whole emits over 100 tons of pollutant, it qualifies as a major stationary source. This interpretation differed from that of the Court of Appeals, which viewed the statutory definition as flexible enough to cover various interpretations, including a plantwide definition. The Court noted that the dispute centered around the applicability of definitions under the statute concerning programs designed to maintain clean air and improve air quality [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 2,
+          "title": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep467/usrep467837/usrep467837.pdf",
+          "page": "p. 23",
+          "content_sha256": "b71f216d9e9557c1164069b32b61357073eeae7b10d7b931801a12eab15a0dfd",
+          "document_id": "0f1e1011af4c5fc2f124503502d51d3d"
+        },
+        {
+          "index": 3,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 4,
+          "title": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep467/usrep467837/usrep467837.pdf",
+          "page": "p. 13",
+          "content_sha256": "b71f216d9e9557c1164069b32b61357073eeae7b10d7b931801a12eab15a0dfd",
+          "document_id": "0f1e1011af4c5fc2f124503502d51d3d"
+        },
+        {
+          "index": 5,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 2",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 6,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 12",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 7,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 2",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "unfaithful",
+      "judge_explanation": "Never states the Court's actual holding (that the plantwide/bubble definition was permissible); instead presents the respondents' losing argument right after the word 'held,' which could mislead a reader about the outcome."
+    },
+    {
+      "id": "gs-05",
+      "query": "Did burning the American flag as a form of political protest count as protected expression under the First Amendment in Texas v. Johnson?",
+      "expected_document": "Texas v. Johnson",
+      "expected_document_id": "0bd886529e387ecb36a4e5455b17d215",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "Yes. The Court held that Johnson's flag burning was expressive conduct implicating the First Amendment, and that Texas's asserted interest in preventing breaches of the peace was not implicated because the government cannot assume that provocative expression will incite a riot.",
+      "generated_answer": "Yes, burning the American flag as a form of political protest was considered protected expression under the First Amendment in Texas v. Johnson. The court found that Johnson's conduct constituted expressive conduct that was clearly intended to convey a political message during a demonstration. The Texas Court of Criminal Appeals recognized that Johnson's flag burning was symbolic speech protected by the First Amendment, concluding that the State could not criminally sanction him for this act in these circumstances [SOURCE 2], [SOURCE 4].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Texas v. Johnson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep491/usrep491397/usrep491397.pdf",
+          "page": "p. 1",
+          "content_sha256": "a28c0376c7987f1519bcc6f886475a68be67ae2a77bc3a90f0aeb67aa3f1ffb5",
+          "document_id": "0bd886529e387ecb36a4e5455b17d215"
+        },
+        {
+          "index": 2,
+          "title": "Texas v. Johnson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep491/usrep491397/usrep491397.pdf",
+          "page": "p. 1",
+          "content_sha256": "a28c0376c7987f1519bcc6f886475a68be67ae2a77bc3a90f0aeb67aa3f1ffb5",
+          "document_id": "0bd886529e387ecb36a4e5455b17d215"
+        },
+        {
+          "index": 3,
+          "title": "Texas v. Johnson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep491/usrep491397/usrep491397.pdf",
+          "page": "p. 3",
+          "content_sha256": "a28c0376c7987f1519bcc6f886475a68be67ae2a77bc3a90f0aeb67aa3f1ffb5",
+          "document_id": "0bd886529e387ecb36a4e5455b17d215"
+        },
+        {
+          "index": 4,
+          "title": "Texas v. Johnson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep491/usrep491397/usrep491397.pdf",
+          "page": "p. 4",
+          "content_sha256": "a28c0376c7987f1519bcc6f886475a68be67ae2a77bc3a90f0aeb67aa3f1ffb5",
+          "document_id": "0bd886529e387ecb36a4e5455b17d215"
+        },
+        {
+          "index": 5,
+          "title": "Texas v. Johnson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep491/usrep491397/usrep491397.pdf",
+          "page": "p. 6",
+          "content_sha256": "a28c0376c7987f1519bcc6f886475a68be67ae2a77bc3a90f0aeb67aa3f1ffb5",
+          "document_id": "0bd886529e387ecb36a4e5455b17d215"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2,
+        4
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "partially_faithful",
+      "judge_explanation": "Reaches the correct bottom-line conclusion but attributes the reasoning to the Texas Court of Criminal Appeals without clarifying the U.S. Supreme Court affirmed this as its own holding."
+    },
+    {
+      "id": "gs-06",
+      "query": "In United States v. Nixon, did the Court treat the dispute between the Special Prosecutor and the President as a non-justiciable 'intra-branch dispute'?",
+      "expected_document": "United States v. Nixon",
+      "expected_document_id": "2e272da01a17d887ca68cbf606b97847",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "No. The Court held that the mere assertion of an intra-branch dispute, without more, does not defeat federal jurisdiction, and that the dispute between the Special Prosecutor and the President presented a justiciable controversy.",
+      "generated_answer": "No, the Court did not treat the dispute between the Special Prosecutor and the President as a non-justiciable \"intra-branch dispute.\" The District Court rejected the contention that the dispute was nonjusticiable because it was \"intra-executive\" in character. The court concluded that a justiciable controversy was presented, and that the judiciary had the authority to review the President's assertion of executive privilege [SOURCE 3].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "United States v. Nixon",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep418/usrep418683/usrep418683.pdf",
+          "page": "p. 1",
+          "content_sha256": "04f87a19ea6714f1dcb6047845811a2889df60add0400ae1b43ab35dc3e62ca1",
+          "document_id": "2e272da01a17d887ca68cbf606b97847"
+        },
+        {
+          "index": 2,
+          "title": "United States v. Nixon",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep418/usrep418683/usrep418683.pdf",
+          "page": "p. 2",
+          "content_sha256": "04f87a19ea6714f1dcb6047845811a2889df60add0400ae1b43ab35dc3e62ca1",
+          "document_id": "2e272da01a17d887ca68cbf606b97847"
+        },
+        {
+          "index": 3,
+          "title": "United States v. Nixon",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep418/usrep418683/usrep418683.pdf",
+          "page": "p. 7",
+          "content_sha256": "04f87a19ea6714f1dcb6047845811a2889df60add0400ae1b43ab35dc3e62ca1",
+          "document_id": "2e272da01a17d887ca68cbf606b97847"
+        },
+        {
+          "index": 4,
+          "title": "United States v. Nixon",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep418/usrep418683/usrep418683.pdf",
+          "page": "p. 2",
+          "content_sha256": "04f87a19ea6714f1dcb6047845811a2889df60add0400ae1b43ab35dc3e62ca1",
+          "document_id": "2e272da01a17d887ca68cbf606b97847"
+        },
+        {
+          "index": 5,
+          "title": "United States v. Nixon",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep418/usrep418683/usrep418683.pdf",
+          "page": "p. 5",
+          "content_sha256": "04f87a19ea6714f1dcb6047845811a2889df60add0400ae1b43ab35dc3e62ca1",
+          "document_id": "2e272da01a17d887ca68cbf606b97847"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        3
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Accurately restates the justiciability holding and standard."
+    },
+    {
+      "id": "gs-07",
+      "query": "What Code does the Tax Cuts and Jobs Act (Pub. L. 115-97) refer to when it amends 'the Code'?",
+      "expected_document": "Tax Cuts and Jobs Act",
+      "expected_document_id": "33e05d45f4e16a6fdb6b54d48363b7be",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "Except as otherwise expressly provided, the Tax Cuts and Jobs Act states that any amendment or repeal expressed in terms of an amendment to, or repeal of, a section or provision is a reference to a section or provision of the Internal Revenue Code of 1986.",
+      "generated_answer": "The Tax Cuts and Jobs Act (Pub. L. 115-97) refers to the Internal Revenue Code of 1986 when it amends 'the Code' [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Tax Cuts and Jobs Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf",
+          "page": "p. 2",
+          "content_sha256": "4f9ad9b1029a98a99c94b46e7d06b57251e199b6fb502b062648a7dee7c0d00e",
+          "document_id": "33e05d45f4e16a6fdb6b54d48363b7be"
+        },
+        {
+          "index": 2,
+          "title": "Tax Cuts and Jobs Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf",
+          "page": "p. 19",
+          "content_sha256": "4f9ad9b1029a98a99c94b46e7d06b57251e199b6fb502b062648a7dee7c0d00e",
+          "document_id": "33e05d45f4e16a6fdb6b54d48363b7be"
+        },
+        {
+          "index": 3,
+          "title": "Tax Cuts and Jobs Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf",
+          "page": "p. 18",
+          "content_sha256": "4f9ad9b1029a98a99c94b46e7d06b57251e199b6fb502b062648a7dee7c0d00e",
+          "document_id": "33e05d45f4e16a6fdb6b54d48363b7be"
+        },
+        {
+          "index": 4,
+          "title": "Tax Cuts and Jobs Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf",
+          "page": "p. 7",
+          "content_sha256": "4f9ad9b1029a98a99c94b46e7d06b57251e199b6fb502b062648a7dee7c0d00e",
+          "document_id": "33e05d45f4e16a6fdb6b54d48363b7be"
+        },
+        {
+          "index": 5,
+          "title": "Tax Cuts and Jobs Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf",
+          "page": "p. 42",
+          "content_sha256": "4f9ad9b1029a98a99c94b46e7d06b57251e199b6fb502b062648a7dee7c0d00e",
+          "document_id": "33e05d45f4e16a6fdb6b54d48363b7be"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Directly and correctly identifies the Internal Revenue Code of 1986."
+    },
+    {
+      "id": "gs-08",
+      "query": "What is the stated purpose of the Dodd-Frank Wall Street Reform and Consumer Protection Act?",
+      "expected_document": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+      "expected_document_id": "c17a8356707664d8dba05aa28d94162e",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "Dodd-Frank was enacted to promote the financial stability of the United States by improving accountability and transparency in the financial system, to end 'too big to fail,' to protect the American taxpayer by ending bailouts, and to protect consumers from abusive financial services practices.",
+      "generated_answer": "The stated purpose of the Dodd-Frank Wall Street Reform and Consumer Protection Act is \"to promote the financial stability of the United States by improving accountability and transparency in the financial system, to end 'too big to fail', to protect the American taxpayer by ending bailouts, to protect consumers from abusive financial services practices, and for other purposes\" [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+          "page": "p. 2",
+          "content_sha256": "8460069ded90a39c98fffe52d169d021b91335cf0540138f30f9778084271466",
+          "document_id": "c17a8356707664d8dba05aa28d94162e"
+        },
+        {
+          "index": 2,
+          "title": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+          "page": "p. 1",
+          "content_sha256": "8460069ded90a39c98fffe52d169d021b91335cf0540138f30f9778084271466",
+          "document_id": "c17a8356707664d8dba05aa28d94162e"
+        },
+        {
+          "index": 3,
+          "title": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+          "page": "p. 10",
+          "content_sha256": "8460069ded90a39c98fffe52d169d021b91335cf0540138f30f9778084271466",
+          "document_id": "c17a8356707664d8dba05aa28d94162e"
+        },
+        {
+          "index": 4,
+          "title": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+          "page": "p. 21",
+          "content_sha256": "8460069ded90a39c98fffe52d169d021b91335cf0540138f30f9778084271466",
+          "document_id": "c17a8356707664d8dba05aa28d94162e"
+        },
+        {
+          "index": 5,
+          "title": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+          "page": "p. 9",
+          "content_sha256": "8460069ded90a39c98fffe52d169d021b91335cf0540138f30f9778084271466",
+          "document_id": "c17a8356707664d8dba05aa28d94162e"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the stated purpose of Dodd-Frank verbatim."
+    },
+    {
+      "id": "gs-09",
+      "query": "What was the stated purpose of the USA PATRIOT Act of 2001?",
+      "expected_document": "USA PATRIOT Act",
+      "expected_document_id": "b6b2b4b7a6f1f7ce267a36d896f96f8c",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The USA PATRIOT Act was enacted to deter and punish terrorist acts in the United States and around the world, and to enhance law enforcement investigatory tools.",
+      "generated_answer": "The stated purpose of the USA PATRIOT Act of 2001 was to deter and punish terrorist acts in the United States and around the world, enhance law enforcement investigatory tools, and for other purposes [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "USA PATRIOT Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ56/pdf/PLAW-107publ56.pdf",
+          "page": "p. 2",
+          "content_sha256": "bed9884cea6a70e81f8d42a78d2301149ba9176cbbd6ad74b36e5a2dcdbfc0a2",
+          "document_id": "b6b2b4b7a6f1f7ce267a36d896f96f8c"
+        },
+        {
+          "index": 2,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 3,
+          "title": "USA PATRIOT Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ56/pdf/PLAW-107publ56.pdf",
+          "page": "p. 1",
+          "content_sha256": "bed9884cea6a70e81f8d42a78d2301149ba9176cbbd6ad74b36e5a2dcdbfc0a2",
+          "document_id": "b6b2b4b7a6f1f7ce267a36d896f96f8c"
+        },
+        {
+          "index": 4,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 5,
+          "title": "USA PATRIOT Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ56/pdf/PLAW-107publ56.pdf",
+          "page": "p. 7",
+          "content_sha256": "bed9884cea6a70e81f8d42a78d2301149ba9176cbbd6ad74b36e5a2dcdbfc0a2",
+          "document_id": "b6b2b4b7a6f1f7ce267a36d896f96f8c"
+        },
+        {
+          "index": 6,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 4",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 7,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 2",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the stated purpose of the USA PATRIOT Act."
+    },
+    {
+      "id": "gs-10",
+      "query": "What is the Sarbanes-Oxley Act of 2002 intended to protect, and how?",
+      "expected_document": "Sarbanes-Oxley Act of 2002",
+      "expected_document_id": "83f61c186b01558c9ca8d51a6f613a31",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Sarbanes-Oxley Act was enacted to protect investors by improving the accuracy and reliability of corporate disclosures made pursuant to the securities laws.",
+      "generated_answer": "The Sarbanes-Oxley Act of 2002 is intended to protect investors by improving the accuracy and reliability of corporate disclosures made pursuant to the securities laws [SOURCE 1]. It accomplishes this through various provisions that establish regulatory standards, enhance corporate responsibility, and enforce penalties for fraud within publicly traded companies [SOURCE 2][SOURCE 4]. By mandating stronger internal controls and requiring accountability from corporate executives, the Act aims to foster transparency and integrity in financial reporting [SOURCE 3][SOURCE 5].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Sarbanes-Oxley Act of 2002",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ204/pdf/PLAW-107publ204.pdf",
+          "page": "p. 1",
+          "content_sha256": "f6666256313bbaddac941da3f5bda04645e5abaf08a6c53394eef2d26a93a127",
+          "document_id": "83f61c186b01558c9ca8d51a6f613a31"
+        },
+        {
+          "index": 2,
+          "title": "Sarbanes-Oxley Act of 2002",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ204/pdf/PLAW-107publ204.pdf",
+          "page": "p. 2",
+          "content_sha256": "f6666256313bbaddac941da3f5bda04645e5abaf08a6c53394eef2d26a93a127",
+          "document_id": "83f61c186b01558c9ca8d51a6f613a31"
+        },
+        {
+          "index": 3,
+          "title": "Sarbanes-Oxley Act of 2002",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ204/pdf/PLAW-107publ204.pdf",
+          "page": "p. 5",
+          "content_sha256": "f6666256313bbaddac941da3f5bda04645e5abaf08a6c53394eef2d26a93a127",
+          "document_id": "83f61c186b01558c9ca8d51a6f613a31"
+        },
+        {
+          "index": 4,
+          "title": "Sarbanes-Oxley Act of 2002",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ204/pdf/PLAW-107publ204.pdf",
+          "page": "p. 2",
+          "content_sha256": "f6666256313bbaddac941da3f5bda04645e5abaf08a6c53394eef2d26a93a127",
+          "document_id": "83f61c186b01558c9ca8d51a6f613a31"
+        },
+        {
+          "index": 5,
+          "title": "Sarbanes-Oxley Act of 2002",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-107publ204/pdf/PLAW-107publ204.pdf",
+          "page": "p. 22",
+          "content_sha256": "f6666256313bbaddac941da3f5bda04645e5abaf08a6c53394eef2d26a93a127",
+          "document_id": "83f61c186b01558c9ca8d51a6f613a31"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the stated purpose; added mechanism description is general and accurate."
+    },
+    {
+      "id": "gs-11",
+      "query": "What did HIPAA (the Health Insurance Portability and Accountability Act of 1996) amend, and what were its goals?",
+      "expected_document": "Health Insurance Portability and Accountability Act of 1996",
+      "expected_document_id": "d7f74341fa3f29a94844facee76c6b25",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "HIPAA amended the Internal Revenue Code of 1986 to improve the portability and continuity of health insurance coverage in the group and individual markets, to combat waste, fraud, and abuse in health insurance and health care delivery, to promote the use of medical savings accounts, to improve access to long-term care services, and to simplify the administration of health insurance.",
+      "generated_answer": "The Health Insurance Portability and Accountability Act of 1996 (HIPAA) amended the Internal Revenue Code of 1986. Its goals were to improve portability and continuity of health insurance coverage in the group and individual markets, combat waste, fraud, and abuse in health insurance and health care delivery, promote the use of medical savings accounts, improve access to long-term care services and coverage, and simplify the administration of health insurance, among other purposes [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Health Insurance Portability and Accountability Act of 1996",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-104publ191/pdf/PLAW-104publ191.pdf",
+          "page": "p. 2",
+          "content_sha256": "377ed1f8520e1f3b31b8a24b713f9c9833a03f4a862edbd50ea51c57b66084d4",
+          "document_id": "d7f74341fa3f29a94844facee76c6b25"
+        },
+        {
+          "index": 2,
+          "title": "Health Insurance Portability and Accountability Act of 1996",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-104publ191/pdf/PLAW-104publ191.pdf",
+          "page": "p. 1",
+          "content_sha256": "377ed1f8520e1f3b31b8a24b713f9c9833a03f4a862edbd50ea51c57b66084d4",
+          "document_id": "d7f74341fa3f29a94844facee76c6b25"
+        },
+        {
+          "index": 3,
+          "title": "Health Insurance Portability and Accountability Act of 1996",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-104publ191/pdf/PLAW-104publ191.pdf",
+          "page": "p. 3",
+          "content_sha256": "377ed1f8520e1f3b31b8a24b713f9c9833a03f4a862edbd50ea51c57b66084d4",
+          "document_id": "d7f74341fa3f29a94844facee76c6b25"
+        },
+        {
+          "index": 4,
+          "title": "Patient Protection and Affordable Care Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ148/pdf/PLAW-111publ148.pdf",
+          "page": "p. 1",
+          "content_sha256": "f5112f582ef4e15808cbcf5cb37ae21b6d7b66ee0166158898a7ce6b4562ac50",
+          "document_id": "18686a981a498ccb6ddfa88b31d7a97a"
+        },
+        {
+          "index": 5,
+          "title": "Health Insurance Portability and Accountability Act of 1996",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-104publ191/pdf/PLAW-104publ191.pdf",
+          "page": "p. 2",
+          "content_sha256": "377ed1f8520e1f3b31b8a24b713f9c9833a03f4a862edbd50ea51c57b66084d4",
+          "document_id": "d7f74341fa3f29a94844facee76c6b25"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches HIPAA's amendment target and goals nearly verbatim."
+    },
+    {
+      "id": "gs-12",
+      "query": "What does the Fourth Amendment protect against, according to the Wex commentary?",
+      "expected_document": "Fourth Amendment",
+      "expected_document_id": "b5e5b339f79a01f954c9095a83c668bb",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Fourth Amendment protects the right of people to be secure in their persons, houses, papers, and effects against unreasonable searches and seizures, and requires that warrants be supported by probable cause and particularly describe the place to be searched and the persons or things to be seized. Its ultimate goal is to protect privacy and freedom from unreasonable government intrusion, though it only protects against unreasonable searches and seizures done by the government.",
+      "generated_answer": "According to the Wex commentary, the Fourth Amendment protects against \"unreasonable searches and seizures\" by the government, ensuring the right of the people to be secure in their persons, houses, papers, and effects. The ultimate goal of this provision is to protect people's right to privacy and freedom from unreasonable intrusions by the government [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Fourth Amendment",
+          "source_url": "https://www.law.cornell.edu/wex/fourth_amendment",
+          "page": "p. 1",
+          "content_sha256": "6246bf76e71e012410e6ed52257844995e4150afa8b3ea60b43107527dbbf612",
+          "document_id": "b5e5b339f79a01f954c9095a83c668bb"
+        },
+        {
+          "index": 2,
+          "title": "Fourth Amendment",
+          "source_url": "https://www.law.cornell.edu/wex/fourth_amendment",
+          "page": "p. 1",
+          "content_sha256": "6246bf76e71e012410e6ed52257844995e4150afa8b3ea60b43107527dbbf612",
+          "document_id": "b5e5b339f79a01f954c9095a83c668bb"
+        },
+        {
+          "index": 3,
+          "title": "Terry v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep392/usrep392001/usrep392001.pdf",
+          "page": "p. 12",
+          "content_sha256": "dda7b8f8fb2650cd50e5d0365c2c145f27f9aade692ef2e213d028e13f062af0",
+          "document_id": "4e392beb08359789790fe686b59e23bc"
+        },
+        {
+          "index": 4,
+          "title": "Fourth Amendment",
+          "source_url": "https://www.law.cornell.edu/wex/fourth_amendment",
+          "page": "p. 1",
+          "content_sha256": "6246bf76e71e012410e6ed52257844995e4150afa8b3ea60b43107527dbbf612",
+          "document_id": "b5e5b339f79a01f954c9095a83c668bb"
+        },
+        {
+          "index": 5,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 13",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the Fourth Amendment commentary with no unsupported claims."
+    },
+    {
+      "id": "gs-13",
+      "query": "What rights does the First Amendment protect, according to the Wex commentary?",
+      "expected_document": "First Amendment",
+      "expected_document_id": "3bb36888e04ae02454ebc647d133d491",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The First Amendment protects freedom of religion and freedom of expression from government interference. It prohibits laws establishing a national religion, impeding the free exercise of religion, abridging freedom of speech, infringing the freedom of the press, interfering with the right to peaceably assemble, or prohibiting people from petitioning the government for redress of grievances.",
+      "generated_answer": "The First Amendment protects the following rights:\n\n1. Freedom of religion: It prohibits the government from establishing a national religion and protects the free exercise of religion by individuals [SOURCE 1].\n\n2. Freedom of speech: It allows individuals to express themselves without government interference or regulation [SOURCE 3].\n\n3. Freedom of the press: This right is part of the broader protection of freedom of expression and allows individuals to publish and disseminate information [SOURCE 5].\n\n4. Right to peaceably assemble: This right enables individuals to gather for lawful purposes, which includes the implicit right to association and belief [SOURCE 5].\n\n5. Right to petition the government: Individuals have the right to petition the government for a redress of grievances [SOURCE 1]. \n\nOverall, the First Amendment guards against government interference in these fundamental rights [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "First Amendment",
+          "source_url": "https://www.law.cornell.edu/wex/first_amendment",
+          "page": "p. 1",
+          "content_sha256": "10c5270eef66621f1ee348be7aeedc99b1ce195748b8e81f65f24fd5eab7ad6d",
+          "document_id": "3bb36888e04ae02454ebc647d133d491"
+        },
+        {
+          "index": 2,
+          "title": "District of Columbia v. Heller",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf",
+          "page": "p. 96",
+          "content_sha256": "8ea329fdac7403a11981eee4eadbf4e2f9f858551baa5e7ba9e095c413d2bd01",
+          "document_id": "26bfdd8832efa930da6bb4d1cb110bdf"
+        },
+        {
+          "index": 3,
+          "title": "First Amendment",
+          "source_url": "https://www.law.cornell.edu/wex/first_amendment",
+          "page": "p. 1",
+          "content_sha256": "10c5270eef66621f1ee348be7aeedc99b1ce195748b8e81f65f24fd5eab7ad6d",
+          "document_id": "3bb36888e04ae02454ebc647d133d491"
+        },
+        {
+          "index": 4,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 132",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 5,
+          "title": "First Amendment",
+          "source_url": "https://www.law.cornell.edu/wex/first_amendment",
+          "page": "p. 1",
+          "content_sha256": "10c5270eef66621f1ee348be7aeedc99b1ce195748b8e81f65f24fd5eab7ad6d",
+          "document_id": "3bb36888e04ae02454ebc647d133d491"
+        },
+        {
+          "index": 6,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 32",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        },
+        {
+          "index": 7,
+          "title": "Schenck v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep249/usrep249047/usrep249047.pdf",
+          "page": "p. 5",
+          "content_sha256": "2e26f45f598e9eacb08796ca2fc322f30c8e39a87461f110565d86d0669ab5c1",
+          "document_id": "3369f8fa2ef2897d548171c699bdb1e7"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1,
+        3,
+        5
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches and appropriately elaborates on First Amendment protections."
+    },
+    {
+      "id": "gs-14",
+      "query": "What is the constitutional source of the 'due process' requirement, and to whom does it apply?",
+      "expected_document": "Due Process",
+      "expected_document_id": "6a911d865959f6f5de1dfe501dc8f7d4",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "Due process derives from the Fifth Amendment, which provides that no one shall be deprived of life, liberty, or property without due process of law by the federal government. The Fourteenth Amendment, ratified in 1868, uses the same words in its Due Process Clause to extend this obligation to the states.",
+      "generated_answer": "The constitutional source of the 'due process' requirement is primarily found in the Fifth Amendment of the U.S. Constitution, which states that no one shall be \"deprived of life, liberty or property without due process of law\" by the federal government. Additionally, the Fourteenth Amendment, ratified in 1868, reiterates this principle with the same eleven words in its Due Process Clause, extending this obligation to the states. Thus, it applies to both the federal government and state governments [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Due Process",
+          "source_url": "https://www.law.cornell.edu/wex/due_process",
+          "page": "p. 1",
+          "content_sha256": "5e8f57b6f5f1c8ea97c219b308e8dcb90812470dc1c1d9d72c80429ca07744e0",
+          "document_id": "6a911d865959f6f5de1dfe501dc8f7d4"
+        },
+        {
+          "index": 2,
+          "title": "Due Process",
+          "source_url": "https://www.law.cornell.edu/wex/due_process",
+          "page": "p. 1",
+          "content_sha256": "5e8f57b6f5f1c8ea97c219b308e8dcb90812470dc1c1d9d72c80429ca07744e0",
+          "document_id": "6a911d865959f6f5de1dfe501dc8f7d4"
+        },
+        {
+          "index": 3,
+          "title": "Due Process",
+          "source_url": "https://www.law.cornell.edu/wex/due_process",
+          "page": "p. 1",
+          "content_sha256": "5e8f57b6f5f1c8ea97c219b308e8dcb90812470dc1c1d9d72c80429ca07744e0",
+          "document_id": "6a911d865959f6f5de1dfe501dc8f7d4"
+        },
+        {
+          "index": 4,
+          "title": "Due Process",
+          "source_url": "https://www.law.cornell.edu/wex/due_process",
+          "page": "p. 1",
+          "content_sha256": "5e8f57b6f5f1c8ea97c219b308e8dcb90812470dc1c1d9d72c80429ca07744e0",
+          "document_id": "6a911d865959f6f5de1dfe501dc8f7d4"
+        },
+        {
+          "index": 5,
+          "title": "Due Process",
+          "source_url": "https://www.law.cornell.edu/wex/due_process",
+          "page": "p. 1",
+          "content_sha256": "5e8f57b6f5f1c8ea97c219b308e8dcb90812470dc1c1d9d72c80429ca07744e0",
+          "document_id": "6a911d865959f6f5de1dfe501dc8f7d4"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the Due Process Clause explanation and its constitutional sourcing."
+    },
+    {
+      "id": "gs-15",
+      "query": "What are the basic elements required for an agreement to be a legally enforceable contract, according to the Wex commentary?",
+      "expected_document": "Contract",
+      "expected_document_id": "eb9fc931682357429ab411dcbe3425fb",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The basic elements are mutual assent (offer and acceptance), consideration (something of value exchanged), capacity (such as minimum age and sound mind), and legality (a lawful purpose). In some states, a valid substitute can satisfy the consideration element.",
+      "generated_answer": "The basic elements required for an agreement to be a legally enforceable contract, according to the Wex commentary, are:\n\n1. Mutual assent (offer and acceptance)\n2. Consideration (something of value is exchanged)\n3. Capacity (e.g., minimum age, sound mind)\n4. Legality (lawful purpose) [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Contract",
+          "source_url": "https://www.law.cornell.edu/wex/contract",
+          "page": "p. 1",
+          "content_sha256": "2053f9af7c4daa9e5797e12b99bab4c49827ead8a058ea572471c784c7a52388",
+          "document_id": "eb9fc931682357429ab411dcbe3425fb"
+        },
+        {
+          "index": 2,
+          "title": "Contract",
+          "source_url": "https://www.law.cornell.edu/wex/contract",
+          "page": "p. 1",
+          "content_sha256": "2053f9af7c4daa9e5797e12b99bab4c49827ead8a058ea572471c784c7a52388",
+          "document_id": "eb9fc931682357429ab411dcbe3425fb"
+        },
+        {
+          "index": 3,
+          "title": "Contract",
+          "source_url": "https://www.law.cornell.edu/wex/contract",
+          "page": "p. 1",
+          "content_sha256": "2053f9af7c4daa9e5797e12b99bab4c49827ead8a058ea572471c784c7a52388",
+          "document_id": "eb9fc931682357429ab411dcbe3425fb"
+        },
+        {
+          "index": 4,
+          "title": "Contract",
+          "source_url": "https://www.law.cornell.edu/wex/contract",
+          "page": "p. 1",
+          "content_sha256": "2053f9af7c4daa9e5797e12b99bab4c49827ead8a058ea572471c784c7a52388",
+          "document_id": "eb9fc931682357429ab411dcbe3425fb"
+        },
+        {
+          "index": 5,
+          "title": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf",
+          "page": "p. 360",
+          "content_sha256": "8460069ded90a39c98fffe52d169d021b91335cf0540138f30f9778084271466",
+          "document_id": "c17a8356707664d8dba05aa28d94162e"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Lists exactly the four contract elements from the reference."
+    },
+    {
+      "id": "gs-16",
+      "query": "What is the definition of negligence, according to the Wex commentary?",
+      "expected_document": "Negligence",
+      "expected_document_id": "22d7ede3801ee8ddd62be165f37cb45e",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "Negligence is the failure to behave with the level of care that a reasonable person would have exercised under the same circumstances. Both actions and, in some cases, omissions can be found negligent -- omissions only when the person had a duty to act. Negligence is a foundational concept of tort law.",
+      "generated_answer": "Negligence is defined as the failure to behave with the level of care that a reasonable person would have exercised under the same circumstances. It can result from a person\u2019s actions or omissions of actions and is only considered negligent if there was a duty to act. Negligence is a foundational concept of tort law, involving several factors including the foreseeable likelihood of harm, its severity, and the burden of precautions necessary to reduce the risk of harm. The five elements typically required to prove negligence include: (1) the existence of a legal duty owed by the defendant to the plaintiff; (2) a breach of that duty; (3) harm to the plaintiff; (4) proximate cause of harm; and (5) cause-in-fact of harm to the plaintiff [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Negligence",
+          "source_url": "https://www.law.cornell.edu/wex/negligence",
+          "page": "p. 1",
+          "content_sha256": "358558607e440a80bbfbc689f0b157f76ac5dcb5db5fc68c628acde75e53f5b8",
+          "document_id": "22d7ede3801ee8ddd62be165f37cb45e"
+        },
+        {
+          "index": 2,
+          "title": "Negligence",
+          "source_url": "https://www.law.cornell.edu/wex/negligence",
+          "page": "p. 1",
+          "content_sha256": "358558607e440a80bbfbc689f0b157f76ac5dcb5db5fc68c628acde75e53f5b8",
+          "document_id": "22d7ede3801ee8ddd62be165f37cb45e"
+        },
+        {
+          "index": 3,
+          "title": "Negligence",
+          "source_url": "https://www.law.cornell.edu/wex/negligence",
+          "page": "p. 1",
+          "content_sha256": "358558607e440a80bbfbc689f0b157f76ac5dcb5db5fc68c628acde75e53f5b8",
+          "document_id": "22d7ede3801ee8ddd62be165f37cb45e"
+        },
+        {
+          "index": 4,
+          "title": "Negligence",
+          "source_url": "https://www.law.cornell.edu/wex/negligence",
+          "page": "p. 1",
+          "content_sha256": "358558607e440a80bbfbc689f0b157f76ac5dcb5db5fc68c628acde75e53f5b8",
+          "document_id": "22d7ede3801ee8ddd62be165f37cb45e"
+        },
+        {
+          "index": 5,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 16",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the negligence definition; the five-elements detail is consistent with the source."
+    },
+    {
+      "id": "gs-17",
+      "query": "What are the Social Security and Medicare tax rates and the Social Security wage base limit described in IRS Publication 15 (Circular E)?",
+      "expected_document": "Publication 15 (Circular E), Employer's Tax Guide",
+      "expected_document_id": "3ea48ee6f69651ec5fafe3391f860e67",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Medicare tax rate is 1.45% each for the employee and employer, with no wage base limit for Medicare tax. The Social Security wage base limit is $184,500.",
+      "generated_answer": "The Social Security tax rate is 6.2% for both the employee and employer, and the wage base limit for Social Security in 2026 is $184,500. The Medicare tax rate is 1.45% each for the employee and employer, and there is no wage base limit for Medicare tax [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Publication 15 (Circular E), Employer's Tax Guide",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+          "page": "p. 2",
+          "content_sha256": "b46c3622439d8521e3a0faca4cd5b5ece3451b526f65f06a5e38d5c9f804c88b",
+          "document_id": "3ea48ee6f69651ec5fafe3391f860e67"
+        },
+        {
+          "index": 2,
+          "title": "Publication 15 (Circular E), Employer's Tax Guide",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+          "page": "p. 1",
+          "content_sha256": "b46c3622439d8521e3a0faca4cd5b5ece3451b526f65f06a5e38d5c9f804c88b",
+          "document_id": "3ea48ee6f69651ec5fafe3391f860e67"
+        },
+        {
+          "index": 3,
+          "title": "Publication 15 (Circular E), Employer's Tax Guide",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+          "page": "p. 4",
+          "content_sha256": "b46c3622439d8521e3a0faca4cd5b5ece3451b526f65f06a5e38d5c9f804c88b",
+          "document_id": "3ea48ee6f69651ec5fafe3391f860e67"
+        },
+        {
+          "index": 4,
+          "title": "Publication 15 (Circular E), Employer's Tax Guide",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p15.pdf",
+          "page": "p. 1",
+          "content_sha256": "b46c3622439d8521e3a0faca4cd5b5ece3451b526f65f06a5e38d5c9f804c88b",
+          "document_id": "3ea48ee6f69651ec5fafe3391f860e67"
+        },
+        {
+          "index": 5,
+          "title": "Publication 225, Farmer's Tax Guide",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p225.pdf",
+          "page": "p. 78",
+          "content_sha256": "67a82f92fad122ef2f611a88123a377a02c12b10cb7b15b4beb3f14d6d012249",
+          "document_id": "0ab9bf22a7d399642938c4e3c9ae7e7b"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the Medicare rate and SS wage base; the added 6.2% SS rate is standard and non-contradictory."
+    },
+    {
+      "id": "gs-18",
+      "query": "What is the 2025 standard deduction for a single filer under age 65, according to IRS Publication 501?",
+      "expected_document": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+      "expected_document_id": "534a43b60e68ff4227788b6ddbcd8f3e",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "For 2025, a single filer under age 65 has a standard deduction of $15,750.",
+      "generated_answer": "The 2025 standard deduction for a single filer under age 65 is $15,750 [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p501.pdf",
+          "page": "p. 2",
+          "content_sha256": "288b62a4917f3bc3df0bade7a22c23a8ae648ba9eb5086df5b8b50e881148ff6",
+          "document_id": "534a43b60e68ff4227788b6ddbcd8f3e"
+        },
+        {
+          "index": 2,
+          "title": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p501.pdf",
+          "page": "p. 1",
+          "content_sha256": "288b62a4917f3bc3df0bade7a22c23a8ae648ba9eb5086df5b8b50e881148ff6",
+          "document_id": "534a43b60e68ff4227788b6ddbcd8f3e"
+        },
+        {
+          "index": 3,
+          "title": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p501.pdf",
+          "page": "p. 1",
+          "content_sha256": "288b62a4917f3bc3df0bade7a22c23a8ae648ba9eb5086df5b8b50e881148ff6",
+          "document_id": "534a43b60e68ff4227788b6ddbcd8f3e"
+        },
+        {
+          "index": 4,
+          "title": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p501.pdf",
+          "page": "p. 5",
+          "content_sha256": "288b62a4917f3bc3df0bade7a22c23a8ae648ba9eb5086df5b8b50e881148ff6",
+          "document_id": "534a43b60e68ff4227788b6ddbcd8f3e"
+        },
+        {
+          "index": 5,
+          "title": "Publication 505, Tax Withholding and Estimated Tax",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p505.pdf",
+          "page": "p. 14",
+          "content_sha256": "c69e87caa93cdefa4493f0ec1d8478b1ff9ec1329ee18c7b9d442f2dcb79c621",
+          "document_id": "80007db22869d4a49998930ccc108425"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Exact match on the 2025 standard deduction figure."
+    },
+    {
+      "id": "gs-19",
+      "query": "What change did the One Big Beautiful Bill Act (OBBBA), P.L. 119-21, make to bonus depreciation according to Publication 463?",
+      "expected_document": "Publication 463, Travel, Gift, and Car Expenses",
+      "expected_document_id": "d6b60e4fdced103e0dc7e55df7635ca4",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "OBBBA amended Internal Revenue Code section 168(k) to provide taxpayers with a permanent 100% additional first-year (bonus) depreciation deduction for qualified property acquired and placed in service, and specified plants planted or grafted, after the applicable date.",
+      "generated_answer": "The One Big Beautiful Bill Act (OBBBA), P.L. 119-21, made several amendments to Code section 168(k) to provide taxpayers with a permanent 100% additional first-year depreciation deduction for qualified property acquired and placed in service, and specified plants planted or grafted, after January 19, 2025. This replaced the annual phasedown of the applicable percentage for the Code section 168(k) additional first-year depreciation deduction with a permanent 100% additional first-year depreciation deduction [SOURCE 1]. Additionally, OBBBA allows taxpayers to elect to deduct 40% (60% for certain property with longer production periods or certain aircraft) instead of 100% additional first-year depreciation for qualified property placed in service during the first tax year ending after January 19, 2025 [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Publication 463, Travel, Gift, and Car Expenses",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p463.pdf",
+          "page": "p. 1",
+          "content_sha256": "ddc3bb15e437bd65c37da2036debdae78c1a0bf5a080b19d5301c81f5ec5ae5d",
+          "document_id": "d6b60e4fdced103e0dc7e55df7635ca4"
+        },
+        {
+          "index": 2,
+          "title": "Publication 463, Travel, Gift, and Car Expenses",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p463.pdf",
+          "page": "p. 24",
+          "content_sha256": "ddc3bb15e437bd65c37da2036debdae78c1a0bf5a080b19d5301c81f5ec5ae5d",
+          "document_id": "d6b60e4fdced103e0dc7e55df7635ca4"
+        },
+        {
+          "index": 3,
+          "title": "Publication 523, Selling Your Home",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p523.pdf",
+          "page": "p. 1",
+          "content_sha256": "f11fca89408fa329fdbfec9b9bd0aa22f411f30704e805088076d89a754f736b",
+          "document_id": "1886d2f74ec7642687fa2fe40f49104f"
+        },
+        {
+          "index": 4,
+          "title": "Tax Cuts and Jobs Act",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf",
+          "page": "p. 49",
+          "content_sha256": "4f9ad9b1029a98a99c94b46e7d06b57251e199b6fb502b062648a7dee7c0d00e",
+          "document_id": "33e05d45f4e16a6fdb6b54d48363b7be"
+        },
+        {
+          "index": 5,
+          "title": "Emergency Economic Stabilization Act of 2008",
+          "source_url": "https://www.govinfo.gov/content/pkg/PLAW-110publ343/pdf/PLAW-110publ343.pdf",
+          "page": "p. 105",
+          "content_sha256": "8bcf7509d3a4ab1c94df37216cae2f9287e4740bfd6d04824d3cfbba8be3a578",
+          "document_id": "a1266992050a6c7d3cc8a0212df8a4e4"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1,
+        2
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Verified against the source: the date and 40%/60% election detail are genuinely present, not hallucinated."
+    },
+    {
+      "id": "gs-20",
+      "query": "What is the self-employment (SE) tax rate for 2025, and how is it broken down, according to IRS Publication 334?",
+      "expected_document": "Publication 334, Tax Guide for Small Business",
+      "expected_document_id": "873eb663a5630a72f872cb67ab445523",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The 2025 SE tax rate on net earnings is 15.3%, consisting of 12.4% Social Security tax plus 2.9% Medicare tax. Only the first $176,100 of combined wages, tips, and net earnings is subject to the Social Security portion of SE tax in 2025.",
+      "generated_answer": "The self-employment (SE) tax rate for 2025 is 15.3%. This is composed of 12.4% for social security tax and 2.9% for Medicare tax [SOURCE 3].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Publication 334, Tax Guide for Small Business",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p334.pdf",
+          "page": "p. 4",
+          "content_sha256": "722639ba7bfd6f5348234b58d21e1afd8cb0c04895138bd5c4539142dde6c60a",
+          "document_id": "873eb663a5630a72f872cb67ab445523"
+        },
+        {
+          "index": 2,
+          "title": "Publication 334, Tax Guide for Small Business",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p334.pdf",
+          "page": "p. 1",
+          "content_sha256": "722639ba7bfd6f5348234b58d21e1afd8cb0c04895138bd5c4539142dde6c60a",
+          "document_id": "873eb663a5630a72f872cb67ab445523"
+        },
+        {
+          "index": 3,
+          "title": "Publication 334, Tax Guide for Small Business",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p334.pdf",
+          "page": "p. 10",
+          "content_sha256": "722639ba7bfd6f5348234b58d21e1afd8cb0c04895138bd5c4539142dde6c60a",
+          "document_id": "873eb663a5630a72f872cb67ab445523"
+        },
+        {
+          "index": 4,
+          "title": "Publication 334, Tax Guide for Small Business",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p334.pdf",
+          "page": "p. 5",
+          "content_sha256": "722639ba7bfd6f5348234b58d21e1afd8cb0c04895138bd5c4539142dde6c60a",
+          "document_id": "873eb663a5630a72f872cb67ab445523"
+        },
+        {
+          "index": 5,
+          "title": "Publication 334, Tax Guide for Small Business",
+          "source_url": "https://www.irs.gov/pub/irs-pdf/p334.pdf",
+          "page": "p. 10",
+          "content_sha256": "722639ba7bfd6f5348234b58d21e1afd8cb0c04895138bd5c4539142dde6c60a",
+          "document_id": "873eb663a5630a72f872cb67ab445523"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        3
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the SE tax rate breakdown; omission of the wage cap is a completeness gap, not a contradiction."
+    },
+    {
+      "id": "gs-21",
+      "query": "According to Brown v. Board of Education, what was the earlier Supreme Court doctrine that the Court's ruling on school segregation overturned, and where did that doctrine originate?",
+      "expected_document": "Brown v. Board of Education",
+      "expected_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461",
+      "graph_expected_document": "Plessy v. Ferguson",
+      "graph_expected_document_id": "f894c21af6da3934f6285b504d4f1d18",
+      "graph_hit": true,
+      "ground_truth_answer": "Brown v. Board of Education overturned the 'separate but equal' doctrine that originated in Plessy v. Ferguson, 163 U.S. 537 (1896), holding that this doctrine has no place in the field of public education.",
+      "generated_answer": "The earlier Supreme Court doctrine that the Court's ruling on school segregation in Brown v. Board of Education overturned was the \"separate but equal\" doctrine. This doctrine originated in the case of Plessy v. Ferguson, 163 U.S. 537, in 1896, which involved transportation rather than education [SOURCE 4].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 1",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 2,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 4",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 3,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 9",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 4,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 9",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 5,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 6",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 6,
+          "title": "Plessy v. Ferguson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep163/usrep163537/usrep163537.pdf",
+          "page": "p. 8",
+          "content_sha256": "1bd8154d5ed6e16f3fec76f0cd14286f57975b997cdadf749f9bb40446b683e2",
+          "document_id": "f894c21af6da3934f6285b504d4f1d18"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        4
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Correctly identifies Plessy v. Ferguson as the overturned doctrine's origin, matching ground truth; graph expansion worked as intended."
+    },
+    {
+      "id": "gs-22",
+      "query": "In Miranda v. Arizona, which earlier Supreme Court case did the Court rely on for the principle that appointment of counsel for indigent suspects is required?",
+      "expected_document": "Miranda v. Arizona",
+      "expected_document_id": "208516a7f962568e815530beb6fd5356",
+      "graph_expected_document": "Gideon v. Wainwright",
+      "graph_expected_document_id": "cc05b05c3d65159b07202df46f5c9e25",
+      "graph_hit": true,
+      "ground_truth_answer": "Miranda v. Arizona ties the appointment of counsel for indigent suspects to Gideon v. Wainwright, 372 U.S. 335, alongside Douglas v. California, 372 U.S. 353.",
+      "generated_answer": "In Miranda v. Arizona, the Court relied on the earlier Supreme Court case of Escobedo v. Illinois, 378 U. S. 478, which stressed the need for protective devices to ensure that the police interrogation process conforms to the dictates of the privilege against self-incrimination [SOURCE 5].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 4",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 2,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 6",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 3,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 8",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 4,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 1",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 5,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 2",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 6,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 6",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        },
+        {
+          "index": 7,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 40",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        5
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "unfaithful",
+      "judge_explanation": "Names Escobedo v. Illinois instead of Gideon v. Wainwright, the case the question specifically asked about and which was available in context (graph_hit=True) but not used."
+    },
+    {
+      "id": "gs-23",
+      "query": "What Fourth Amendment case does Miranda v. Arizona reference in discussing concerns about confessions obtained through unsupervised police interrogation?",
+      "expected_document": "Miranda v. Arizona",
+      "expected_document_id": "208516a7f962568e815530beb6fd5356",
+      "graph_expected_document": "Mapp v. Ohio",
+      "graph_expected_document_id": "e02342b1a2f646bc4993023717733954",
+      "graph_hit": true,
+      "ground_truth_answer": "Miranda v. Arizona references Mapp v. Ohio, 367 U.S. 643 (1961), in the context of Justice Harlan's dissent discussing concerns about confessions obtained at the unsupervised pleasure of the police.",
+      "generated_answer": "Miranda v. Arizona references the case Escobedo v. Illinois, 378 U.S. 478, which stressed the need for protective devices to ensure that the process of police interrogation conforms to the dictates of the privilege against self-incrimination [SOURCE 3].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 1",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 2,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 6",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 3,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 2",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 4,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 4",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 5,
+          "title": "Miranda v. Arizona",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf",
+          "page": "p. 10",
+          "content_sha256": "31e7666853b8b72f2793da506814552fcaee91fbdb4ad162f8669a0e2419e193",
+          "document_id": "208516a7f962568e815530beb6fd5356"
+        },
+        {
+          "index": 6,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 8",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        },
+        {
+          "index": 7,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 8",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        3
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "unfaithful",
+      "judge_explanation": "Names Escobedo v. Illinois instead of Mapp v. Ohio, the case the question specifically asked about and which was available in context (graph_hit=True) but not used."
+    },
+    {
+      "id": "gs-24",
+      "query": "In Regents of the University of California v. Bakke, which earlier case is cited as an example of the Court applying a lenient standard of review to a racial classification?",
+      "expected_document": "Regents of the University of California v. Bakke",
+      "expected_document_id": "a856f84f7b1f6a62f2130059d556b659",
+      "graph_expected_document": "Korematsu v. United States",
+      "graph_expected_document_id": "3594ce77874145b88ba4012d67d534fd",
+      "graph_hit": true,
+      "ground_truth_answer": "Bakke cites Korematsu v. United States, 323 U.S. 214 (1944), alongside Hirabayashi v. United States, as an example where the Court sustained a racial classification even though it purported to apply a strict standard of review.",
+      "generated_answer": "In Regents of the University of California v. Bakke, the earlier case cited as an example of the Court applying a lenient standard of review to a racial classification is **Korematsu v. United States**. The judgment refers to this case in the context of discussing the implications of judicial endorsement of racial classifications and suggests that the principles validated in Korematsu could lead to a more expansive application of racial discrimination [SOURCE 6].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 5",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 2,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 7",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 3,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 3",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 4,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 7",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 5,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 31",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 6,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 33",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 7,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 1",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        6
+      ],
+      "cited_expected_document": false,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Correctly identifies Korematsu v. United States as the cited case; characterization of the point being made is a fair paraphrase, not contradictory."
+    },
+    {
+      "id": "gs-25",
+      "query": "According to Regents of the University of California v. Bakke, what series of decisions leading up to Brown v. Board of Education addressed racial segregation before Brown itself was decided?",
+      "expected_document": "Regents of the University of California v. Bakke",
+      "expected_document_id": "a856f84f7b1f6a62f2130059d556b659",
+      "graph_expected_document": "Brown v. Board of Education",
+      "graph_expected_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461",
+      "graph_hit": true,
+      "ground_truth_answer": "Bakke references a series of decisions leading up to Brown v. Board of Education, 347 U.S. 483 (1954), including Morgan v. Virginia, Sweatt v. Painter, and McLaurin v. Oklahoma State Regents, noting that those decisions did not automatically end segregation.",
+      "generated_answer": "The provided excerpts do not contain any information regarding the series of decisions leading up to Brown v. Board of Education, such as Regents of the University of California v. Bakke or any prior cases addressing racial segregation. Therefore, I cannot answer your question based on these sources.",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 1",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 2,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 5",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 3,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 4",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 4,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 13",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 5,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 10",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 6,
+          "title": "Plessy v. Ferguson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep163/usrep163537/usrep163537.pdf",
+          "page": "p. 8",
+          "content_sha256": "1bd8154d5ed6e16f3fec76f0cd14286f57975b997cdadf749f9bb40446b683e2",
+          "document_id": "f894c21af6da3934f6285b504d4f1d18"
+        }
+      ],
+      "cited_any": false,
+      "cited_indices": [],
+      "cited_expected_document": false,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Retrieval failed to surface Bakke (a genuine retrieval miss), but the model correctly declined to answer rather than fabricating content -- the desired faithful behavior given insufficient context."
+    },
+    {
+      "id": "gs-26",
+      "query": "In Planned Parenthood v. Casey, what earlier decision does the Court reaffirm regarding the State's obligation concerning the life or health of the mother?",
+      "expected_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+      "expected_document_id": "511eaa258cc04b47ffd24a2fbf88915b",
+      "graph_expected_document": "Roe v. Wade",
+      "graph_expected_document_id": "09977b54ac4a5a198e9fa2c23c298b9c",
+      "graph_hit": false,
+      "ground_truth_answer": "Casey reaffirms Roe v. Wade, 410 U.S. 113 (1973), specifically its explanation of the State's obligation to protect the life or health of the mother, applying stare decisis principles to that reaffirmation.",
+      "generated_answer": "In Planned Parenthood of Southeastern Pennsylvania v. Casey, the Court reaffirms the recognition of the State's power to restrict abortions after viability, provided that the law includes exceptions for pregnancies that endanger the woman's life or health [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 2,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 2",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 3,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 4,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 90",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 5,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 2",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 6,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 33",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 7,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 1",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "After the graph-expansion re-ranking fix, the answer now correctly names Roe v. Wade (sourced from Roe being named inline in Casey's own anchor text); graph_hit remains a technical near-miss (Roe's own chunk scored 0.032002 vs 0.032258 for the selected candidates, a statistical tie) but did not affect answer correctness."
+    },
+    {
+      "id": "gs-27",
+      "query": "What historically erroneous decision does Planned Parenthood v. Casey cite as an example of a doctrine that 'lasted 58 years' before being corrected?",
+      "expected_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+      "expected_document_id": "511eaa258cc04b47ffd24a2fbf88915b",
+      "graph_expected_document": "Plessy v. Ferguson",
+      "graph_expected_document_id": "f894c21af6da3934f6285b504d4f1d18",
+      "graph_hit": true,
+      "ground_truth_answer": "Casey cites Plessy v. Ferguson, 163 U.S. 537 (1896), as an example of an erroneous decision -- specifically its 'separate but equal' doctrine, which the opinion notes lasted 58 years after Plessy before being corrected.",
+      "generated_answer": "Planned Parenthood v. Casey cites the decision in Plessy v. Ferguson as an example of a historically erroneous decision that \"lasted 58 years\" before being corrected. This case is referenced in the context of discussing how certain lines of decisional law, like that from Plessy, were overruled based on changed understandings of facts and justice [SOURCE 3].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 1",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 2,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 1",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 3,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 4",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 4,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 18",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 5,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 26",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 6,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 15",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        },
+        {
+          "index": 7,
+          "title": "Plessy v. Ferguson",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep163/usrep163537/usrep163537.pdf",
+          "page": "p. 27",
+          "content_sha256": "1bd8154d5ed6e16f3fec76f0cd14286f57975b997cdadf749f9bb40446b683e2",
+          "document_id": "f894c21af6da3934f6285b504d4f1d18"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        3
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Correctly identifies Plessy v. Ferguson and the 58-year detail, matching ground truth."
+    },
+    {
+      "id": "gs-28",
+      "query": "What case does Planned Parenthood v. Casey cite as an example of the Court correctly correcting one of its own errors despite a generation having grown used to the earlier decision?",
+      "expected_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+      "expected_document_id": "511eaa258cc04b47ffd24a2fbf88915b",
+      "graph_expected_document": "Brown v. Board of Education",
+      "graph_expected_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461",
+      "graph_hit": true,
+      "ground_truth_answer": "Casey cites Brown v. Board of Education, 347 U.S. 483 (1954), as an example where the Court corrected its error in rejecting the 'separate but equal' doctrine, alongside West Coast Hotel Co. v. Parrish overruling Adkins v. Children's Hospital.",
+      "generated_answer": "Planned Parenthood v. Casey cites Brown v. Board of Education as an example of the Court correctly correcting one of its own errors despite a generation having grown used to the earlier decision [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 1",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 2,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 4",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 3,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 1",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 4,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 3",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 5,
+          "title": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf",
+          "page": "p. 18",
+          "content_sha256": "7398a92ea9595b4e2633ec035d6e62418f362f3f49dc60a90aeae13494360374",
+          "document_id": "511eaa258cc04b47ffd24a2fbf88915b"
+        },
+        {
+          "index": 6,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 2",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        },
+        {
+          "index": 7,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 15",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Graph-expansion re-ranking fix resolved this: Brown v. Board of Education now correctly appears among expanded sources (graph_hit=True), and the answer correctly names it as the case that overruled Plessy."
+    },
+    {
+      "id": "gs-29",
+      "query": "What earlier First Amendment case does Citizens United v. FEC cite for the principle that doubt should be resolved in favor of protecting speech rather than stifling it?",
+      "expected_document": "Citizens United v. Federal Election Commission",
+      "expected_document_id": "53dc4cdb77882ced76573611f0a2e676",
+      "graph_expected_document": "New York Times Co. v. Sullivan",
+      "graph_expected_document_id": "cfea26cf2db331ac7ea29b4efcda6aa3",
+      "graph_hit": true,
+      "ground_truth_answer": "Citizens United cites New York Times Co. v. Sullivan, 376 U.S. 254, 269-270 (1964), for the principle that First Amendment standards must give the benefit of any doubt to protecting rather than stifling speech.",
+      "generated_answer": "Citizens United v. FEC cites \"New York Times Co. v. Sullivan\" for the principle that First Amendment standards must give the benefit of any doubt to protecting rather than stifling speech [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 15",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 2,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 18",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 3,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 22",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 4,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 2",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 5,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 3",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 6,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 49",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        },
+        {
+          "index": 7,
+          "title": "Schenck v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep249/usrep249047/usrep249047.pdf",
+          "page": "p. 1",
+          "content_sha256": "2e26f45f598e9eacb08796ca2fc322f30c8e39a87461f110565d86d0669ab5c1",
+          "document_id": "3369f8fa2ef2897d548171c699bdb1e7"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Correctly identifies New York Times Co. v. Sullivan matching ground truth."
+    },
+    {
+      "id": "gs-30",
+      "query": "According to Citizens United v. FEC, when did the Court first consider applying the First Amendment to speech restrictions other than prior restraints, and which case marked that point?",
+      "expected_document": "Citizens United v. Federal Election Commission",
+      "expected_document_id": "53dc4cdb77882ced76573611f0a2e676",
+      "graph_expected_document": "Schenck v. United States",
+      "graph_expected_document_id": "3369f8fa2ef2897d548171c699bdb1e7",
+      "graph_hit": true,
+      "ground_truth_answer": "Citizens United states that the Court did not consider application of the First Amendment to speech restrictions other than prior restraints until 1919, in Schenck v. United States, 249 U.S. 47.",
+      "generated_answer": "The Court first considered applying the First Amendment to speech restrictions other than prior restraints in 1919, as marked by the case Schenck v. United States, 249 U.S. 47 [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 81",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 2,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 3",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 3,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 2",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 4,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 26",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 5,
+          "title": "Citizens United v. Federal Election Commission",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf",
+          "page": "p. 20",
+          "content_sha256": "47426f1f570eaa9c112ee0591d278484788a56353c32112ac2a2cb970875a0c8",
+          "document_id": "53dc4cdb77882ced76573611f0a2e676"
+        },
+        {
+          "index": 6,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 49",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        },
+        {
+          "index": 7,
+          "title": "Schenck v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep249/usrep249047/usrep249047.pdf",
+          "page": "p. 1",
+          "content_sha256": "2e26f45f598e9eacb08796ca2fc322f30c8e39a87461f110565d86d0669ab5c1",
+          "document_id": "3369f8fa2ef2897d548171c699bdb1e7"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Correctly identifies Schenck v. United States and the 1919 date matching ground truth."
+    },
+    {
+      "id": "gs-31",
+      "query": "What did the Supreme Court hold in Gideon v. Wainwright regarding the right to counsel for indigent defendants in state criminal trials?",
+      "expected_document": "Gideon v. Wainwright",
+      "expected_document_id": "cc05b05c3d65159b07202df46f5c9e25",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that the right of an indigent defendant in a criminal trial to have the assistance of counsel is a fundamental right essential to a fair trial, and that Gideon's trial and conviction without the assistance of counsel violated the Fourteenth Amendment. The Court overruled Betts v. Brady, 316 U.S. 455, in reaching this holding.",
+      "generated_answer": "In Gideon v. Wainwright, the Supreme Court held that the right of an indigent defendant in a criminal trial to have the assistance of counsel is a fundamental right essential to a fair trial. The Court determined that Gideon's trial and conviction without the assistance of counsel violated his rights under the Fourteenth Amendment, overruled the previous decision in Betts v. Brady, and extended the right to counsel to cases involving noncapital felonies [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 1",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        },
+        {
+          "index": 2,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 3",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        },
+        {
+          "index": 3,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 4",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        },
+        {
+          "index": 4,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 5",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        },
+        {
+          "index": 5,
+          "title": "Gideon v. Wainwright",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf",
+          "page": "p. 9",
+          "content_sha256": "2d3219523cb251490349806ab6ab089a33f82429b8c72cf727f1f8ed4d77407d",
+          "document_id": "cc05b05c3d65159b07202df46f5c9e25"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the right-to-counsel holding and Betts v. Brady overruling; noncapital-felony detail is accurate."
+    },
+    {
+      "id": "gs-32",
+      "query": "What did the Supreme Court hold in Mapp v. Ohio regarding evidence obtained through unconstitutional searches and seizures in state criminal trials?",
+      "expected_document": "Mapp v. Ohio",
+      "expected_document_id": "e02342b1a2f646bc4993023717733954",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that all evidence obtained by searches and seizures in violation of the Federal Constitution is inadmissible in a criminal trial in a state court, overruling Wolf v. Colorado, 338 U.S. 25, to the extent it held otherwise.",
+      "generated_answer": "The Supreme Court held in Mapp v. Ohio that all evidence obtained by searches and seizures in violation of the Federal Constitution is inadmissible in a criminal trial in a state court. This ruling overruled the prior case of Wolf v. Colorado, which allowed such evidence to be used in state courts [SOURCE 1]. The Court emphasized that this exclusionary rule applies to the states through the Due Process Clause of the Fourteenth Amendment, ensuring that the right of privacy is protected in a similar manner as it is against federal officials [SOURCE 5].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 1",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        },
+        {
+          "index": 2,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 3",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        },
+        {
+          "index": 3,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 5",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        },
+        {
+          "index": 4,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 11",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        },
+        {
+          "index": 5,
+          "title": "Mapp v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf",
+          "page": "p. 13",
+          "content_sha256": "c6770815d86f891f2d5b0946512779e4ab44fd7fcaea3ca1308fe733f211ef0f",
+          "document_id": "e02342b1a2f646bc4993023717733954"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1,
+        5
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the exclusionary-rule holding and Wolf v. Colorado overruling."
+    },
+    {
+      "id": "gs-33",
+      "query": "What standard did the Supreme Court apply in Terry v. Ohio to justify a police officer's pat-down search of a suspect for weapons?",
+      "expected_document": "Terry v. Ohio",
+      "expected_document_id": "4e392beb08359789790fe686b59e23bc",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that an officer who has reasonable cause to believe that a person he is investigating is armed and dangerous may conduct a limited pat-down of the outer clothing for weapons, for his own protection, even absent probable cause to arrest.",
+      "generated_answer": "The Supreme Court in Terry v. Ohio applied the standard of whether a police officer had \"reasonable cause to believe\" that the individual being investigated was armed and posed a threat of physical harm. This standard allowed the officer to take necessary measures to ensure his safety during an investigatory stop. The Court emphasized the need for swift action based on the officer's observations and experience, which warranted a limited search for weapons in the absence of probable cause for arrest [SOURCE 2], [SOURCE 4]. The Court distinguished between a \"stop\" and an arrest, stating that an officer can conduct a frisk of outer clothing for weapons without having probable cause to arrest, provided that the officer has a reasonable apprehension of danger based on suspicious behavior [SOURCE 3], [SOURCE 4].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Terry v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep392/usrep392001/usrep392001.pdf",
+          "page": "p. 1",
+          "content_sha256": "dda7b8f8fb2650cd50e5d0365c2c145f27f9aade692ef2e213d028e13f062af0",
+          "document_id": "4e392beb08359789790fe686b59e23bc"
+        },
+        {
+          "index": 2,
+          "title": "Terry v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep392/usrep392001/usrep392001.pdf",
+          "page": "p. 3",
+          "content_sha256": "dda7b8f8fb2650cd50e5d0365c2c145f27f9aade692ef2e213d028e13f062af0",
+          "document_id": "4e392beb08359789790fe686b59e23bc"
+        },
+        {
+          "index": 3,
+          "title": "Terry v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep392/usrep392001/usrep392001.pdf",
+          "page": "p. 8",
+          "content_sha256": "dda7b8f8fb2650cd50e5d0365c2c145f27f9aade692ef2e213d028e13f062af0",
+          "document_id": "4e392beb08359789790fe686b59e23bc"
+        },
+        {
+          "index": 4,
+          "title": "Terry v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep392/usrep392001/usrep392001.pdf",
+          "page": "p. 2",
+          "content_sha256": "dda7b8f8fb2650cd50e5d0365c2c145f27f9aade692ef2e213d028e13f062af0",
+          "document_id": "4e392beb08359789790fe686b59e23bc"
+        },
+        {
+          "index": 5,
+          "title": "Terry v. Ohio",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep392/usrep392001/usrep392001.pdf",
+          "page": "p. 7",
+          "content_sha256": "dda7b8f8fb2650cd50e5d0365c2c145f27f9aade692ef2e213d028e13f062af0",
+          "document_id": "4e392beb08359789790fe686b59e23bc"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2,
+        3,
+        4
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the reasonable-suspicion pat-down standard and stop/arrest distinction."
+    },
+    {
+      "id": "gs-34",
+      "query": "What did the Supreme Court hold in Tinker v. Des Moines Independent Community School District regarding students wearing armbands to school as a form of protest?",
+      "expected_document": "Tinker v. Des Moines Independent Community School District",
+      "expected_document_id": "cdf662eeb52cb36fc397ec2c29eaa7ad",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that the students' wearing of black armbands to protest the Vietnam War was quiet, passive, non-disruptive conduct protected by the Free Speech Clause of the First Amendment and the Due Process Clause of the Fourteenth Amendment, and that students do not shed their constitutional rights to freedom of speech at the schoolhouse gate.",
+      "generated_answer": "The Supreme Court held that students wearing armbands to protest the government's policy in Vietnam were engaging in conduct protected by the Free Speech Clause of the First Amendment and the Due Process Clause of the Fourteenth Amendment. Specifically, the Court found that the students' act of wearing the armbands was quiet and passive, and did not disrupt school activities or impinge upon the rights of others. The Court stated that a prohibition against expression of opinion is not permissible unless it can be shown that such expression would materially and substantially interfere with the operation of the school or the rights of other students. In this case, there was no evidence of such interference, which led to the reversal of the lower courts' decisions [SOURCE 1][SOURCE 4].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Tinker v. Des Moines Independent Community School District",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep393/usrep393503/usrep393503.pdf",
+          "page": "p. 1",
+          "content_sha256": "9e2abaf1ba824eaf0b71e308206580fb13d2ca357dafb5ee12936716f1b5a064",
+          "document_id": "cdf662eeb52cb36fc397ec2c29eaa7ad"
+        },
+        {
+          "index": 2,
+          "title": "Tinker v. Des Moines Independent Community School District",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep393/usrep393503/usrep393503.pdf",
+          "page": "p. 3",
+          "content_sha256": "9e2abaf1ba824eaf0b71e308206580fb13d2ca357dafb5ee12936716f1b5a064",
+          "document_id": "cdf662eeb52cb36fc397ec2c29eaa7ad"
+        },
+        {
+          "index": 3,
+          "title": "Tinker v. Des Moines Independent Community School District",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep393/usrep393503/usrep393503.pdf",
+          "page": "p. 2",
+          "content_sha256": "9e2abaf1ba824eaf0b71e308206580fb13d2ca357dafb5ee12936716f1b5a064",
+          "document_id": "cdf662eeb52cb36fc397ec2c29eaa7ad"
+        },
+        {
+          "index": 4,
+          "title": "Tinker v. Des Moines Independent Community School District",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep393/usrep393503/usrep393503.pdf",
+          "page": "p. 7",
+          "content_sha256": "9e2abaf1ba824eaf0b71e308206580fb13d2ca357dafb5ee12936716f1b5a064",
+          "document_id": "cdf662eeb52cb36fc397ec2c29eaa7ad"
+        },
+        {
+          "index": 5,
+          "title": "Tinker v. Des Moines Independent Community School District",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep393/usrep393503/usrep393503.pdf",
+          "page": "p. 2",
+          "content_sha256": "9e2abaf1ba824eaf0b71e308206580fb13d2ca357dafb5ee12936716f1b5a064",
+          "document_id": "cdf662eeb52cb36fc397ec2c29eaa7ad"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1,
+        4
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the student-speech holding and the material-and-substantial-interference standard."
+    },
+    {
+      "id": "gs-35",
+      "query": "What did the Supreme Court hold in Roe v. Wade regarding a woman's constitutional right of privacy and the decision to terminate a pregnancy?",
+      "expected_document": "Roe v. Wade",
+      "expected_document_id": "09977b54ac4a5a198e9fa2c23c298b9c",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that the constitutional right of privacy, whether founded in the Fourteenth Amendment's concept of personal liberty or the Ninth Amendment's reservation of rights to the people, is broad enough to encompass a woman's decision whether or not to terminate her pregnancy.",
+      "generated_answer": "The Supreme Court held that the Texas criminal abortion statutes are unconstitutional because they improperly invade a woman's right to choose to terminate her pregnancy. This right was found to be rooted in the concept of personal \"liberty\" as embodied in the Due Process Clause of the Fourteenth Amendment, and in the personal, marital, familial, and sexual privacy protected by the Bill of Rights, including the Ninth Amendment [SOURCE 2][SOURCE 4]. The Court affirmed that Roe and the physician, Hallford, had standing to challenge the Texas laws, and emphasized that the fundamental right to choose whether to have children is protected by the Constitution [SOURCE 4].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 1",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        },
+        {
+          "index": 2,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 3",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        },
+        {
+          "index": 3,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 17",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        },
+        {
+          "index": 4,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 10",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        },
+        {
+          "index": 5,
+          "title": "Roe v. Wade",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf",
+          "page": "p. 13",
+          "content_sha256": "7d2f9269c16ab3484c4e69cd9128fa285cbfbac7c2d8c3c75966292a1f3f919c",
+          "document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2,
+        4
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the right-of-privacy holding and its Fourteenth/Ninth Amendment grounding."
+    },
+    {
+      "id": "gs-36",
+      "query": "What standard did the Supreme Court establish in New York Times Co. v. Sullivan for public officials seeking damages for defamatory statements about their official conduct?",
+      "expected_document": "New York Times Co. v. Sullivan",
+      "expected_document_id": "cfea26cf2db331ac7ea29b4efcda6aa3",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that a public official cannot recover damages for a defamatory falsehood relating to their official conduct unless they prove the statement was made with 'actual malice' -- that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+      "generated_answer": "The Supreme Court established that a public official must prove \"actual malice\" to seek damages for defamatory statements concerning their official conduct. Actual malice is defined as knowledge that the statements are false or a reckless disregard for the truth. This standard is necessary for an award of damages for false statements, and the Court ruled that simply showing factual error or defamatory content is insufficient unless actual malice is alleged and proved [SOURCE 1].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 2",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        },
+        {
+          "index": 2,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 1",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        },
+        {
+          "index": 3,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 10",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        },
+        {
+          "index": 4,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 8",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        },
+        {
+          "index": 5,
+          "title": "New York Times Co. v. Sullivan",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf",
+          "page": "p. 14",
+          "content_sha256": "cf04431df4b62ec446a53bac8abf6f67838e511ee1a6d5075deef62590e1c95e",
+          "document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the actual-malice standard precisely."
+    },
+    {
+      "id": "gs-37",
+      "query": "What did the Supreme Court hold in Korematsu v. United States regarding the wartime exclusion order affecting persons of Japanese ancestry?",
+      "expected_document": "Korematsu v. United States",
+      "expected_document_id": "3594ce77874145b88ba4012d67d534fd",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court affirmed Korematsu's conviction, holding that the exclusion order under which he was convicted was valid even though evacuation and detention in an assembly center were inseparable from the exclusion itself.",
+      "generated_answer": "The Supreme Court held that Civilian Exclusion Order No. 34, which directed the exclusion of all persons of Japanese ancestry from a designated military area during wartime as a protection against espionage and sabotage, was constitutional at the time it was made. This ruling pertained specifically to the case where the petitioner, an American citizen of Japanese descent, violated this order by remaining in the prohibited area [SOURCE 2]. The Court acknowledged the hardships imposed by the exclusion on American citizens but stated that such hardships are part of the realities of war, emphasizing the responsibilities of citizenship in wartime [SOURCE 3]. The validity of other orders that required detention in assembly or relocation centers was not considered in this proceeding [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 2",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 2,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 1",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 3,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 6",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 4,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 4",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 5,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 8",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        2,
+        3
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the conviction-affirmed holding; the narrower scope description (exclusion vs. detention orders) is consistent with the actual opinion."
+    },
+    {
+      "id": "gs-38",
+      "query": "What did the Supreme Court hold in Gibbons v. Ogden regarding the scope of Congress's power to regulate commerce among the states?",
+      "expected_document": "Gibbons v. Ogden",
+      "expected_document_id": "869c25cc86cc578a3de2d3d35ae027f1",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that Congress's power over commerce with foreign nations and among the several states is as plenary and absolute, within its specified objects, as it would be in a single unified government, subject only to the restrictions found in the Constitution itself.",
+      "generated_answer": "In Gibbons v. Ogden, the Supreme Court held that Congress has the power to regulate commerce, which is understood to include navigation. The Court determined that the regulation of commerce must encompass activities that take place among the several states, and that both state and federal laws cannot be in conflict concerning such regulation. If federal law is made in the lawful exercise of its power and conflicts with state law, the state law must be void due to this repugnancy [SOURCE 5].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 2,
+          "title": "United States v. Lopez",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep514/usrep514549/usrep514549.pdf",
+          "page": "p. 45",
+          "content_sha256": "4bd8c017a14815f73da60c5285f7177484d047f8a3238c7e7fd85987eda5841f",
+          "document_id": "dc53bcf90579345babcef592dadedf04"
+        },
+        {
+          "index": 3,
+          "title": "Regents of the University of California v. Bakke",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf",
+          "page": "p. 1",
+          "content_sha256": "2bd1c27f2a0f4d96fe7fbf5d02a3dc4ad096a9e8a0451971e464eb6cdbc60dbf",
+          "document_id": "a856f84f7b1f6a62f2130059d556b659"
+        },
+        {
+          "index": 4,
+          "title": "United States v. Lopez",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep514/usrep514549/usrep514549.pdf",
+          "page": "p. 20",
+          "content_sha256": "4bd8c017a14815f73da60c5285f7177484d047f8a3238c7e7fd85987eda5841f",
+          "document_id": "dc53bcf90579345babcef592dadedf04"
+        },
+        {
+          "index": 5,
+          "title": "Gibbons v. Ogden",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep022/usrep022001/usrep022001.pdf",
+          "page": "p. 162",
+          "content_sha256": "59b99d503c94011628516ba7931b436b6bd78bed602ffefc6637edc9e8ec2456",
+          "document_id": "869c25cc86cc578a3de2d3d35ae027f1"
+        },
+        {
+          "index": 6,
+          "title": "Korematsu v. United States",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf",
+          "page": "p. 1",
+          "content_sha256": "2fdaef6d2e55184b529317fee573deb0fc9475c5d3e3d88f5db270f387408c1e",
+          "document_id": "3594ce77874145b88ba4012d67d534fd"
+        },
+        {
+          "index": 7,
+          "title": "Brown v. Board of Education",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf",
+          "page": "p. 2",
+          "content_sha256": "7021074961cffdafdddac07c25c6b21c6a689d1ff118966f5b53bb3a48163ec1",
+          "document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        5
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Accurately describes a real part of the holding (commerce includes navigation, Supremacy Clause preemption); different emphasis than the reference but not contradictory."
+    },
+    {
+      "id": "gs-39",
+      "query": "What principle did the Supreme Court establish in McCulloch v. Maryland regarding a state's power to tax an instrumentality of the federal government?",
+      "expected_document": "McCulloch v. Maryland",
+      "expected_document_id": "3d5dc99011658d66e8ccf649567d6113",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that the power to tax involves the power to destroy, and that a state may not tax an instrumentality of the federal government such as the Bank of the United States, because doing so would allow one government to control and potentially defeat the constitutional measures of another government that is supreme over it.",
+      "generated_answer": "The Supreme Court established that states do not have the power to tax instruments of the federal government, asserting that \"the States have no power, by taxation, or otherwise, to retard, impede, burden, or in any manner control the operations of the constitutional laws enacted by Congress\" [SOURCE 1]. The Court reasoned that permitting states to impose taxes could undermine the federal government\u2019s operations, as it would allow states to interfere with federal entities like the Bank of the United States [SOURCE 3]. This principle emphasizes the supremacy of federal law and the need to prevent state interference with federal powers [SOURCE 2].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "McCulloch v. Maryland",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep017/usrep017316/usrep017316.pdf",
+          "page": "p. 2",
+          "content_sha256": "b0496fefea52c7d4b8999f10b2ef99d05be9a64f61f7938bd18c69dabb5fcd70",
+          "document_id": "3d5dc99011658d66e8ccf649567d6113"
+        },
+        {
+          "index": 2,
+          "title": "McCulloch v. Maryland",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep017/usrep017316/usrep017316.pdf",
+          "page": "p. 1",
+          "content_sha256": "b0496fefea52c7d4b8999f10b2ef99d05be9a64f61f7938bd18c69dabb5fcd70",
+          "document_id": "3d5dc99011658d66e8ccf649567d6113"
+        },
+        {
+          "index": 3,
+          "title": "McCulloch v. Maryland",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep017/usrep017316/usrep017316.pdf",
+          "page": "p. 13",
+          "content_sha256": "b0496fefea52c7d4b8999f10b2ef99d05be9a64f61f7938bd18c69dabb5fcd70",
+          "document_id": "3d5dc99011658d66e8ccf649567d6113"
+        },
+        {
+          "index": 4,
+          "title": "McCulloch v. Maryland",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep017/usrep017316/usrep017316.pdf",
+          "page": "p. 29",
+          "content_sha256": "b0496fefea52c7d4b8999f10b2ef99d05be9a64f61f7938bd18c69dabb5fcd70",
+          "document_id": "3d5dc99011658d66e8ccf649567d6113"
+        },
+        {
+          "index": 5,
+          "title": "McCulloch v. Maryland",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep017/usrep017316/usrep017316.pdf",
+          "page": "p. 5",
+          "content_sha256": "b0496fefea52c7d4b8999f10b2ef99d05be9a64f61f7938bd18c69dabb5fcd70",
+          "document_id": "3d5dc99011658d66e8ccf649567d6113"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        1,
+        2,
+        3
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the power-to-tax-is-power-to-destroy holding with a direct quote."
+    },
+    {
+      "id": "gs-40",
+      "query": "What did the Supreme Court hold in Bush v. Gore regarding the manual recount of ballots ordered by the Florida Supreme Court?",
+      "expected_document": "Bush v. Gore",
+      "expected_document_id": "86531ad0dd3244a856739bc22c143105",
+      "graph_expected_document": null,
+      "graph_expected_document_id": null,
+      "graph_hit": null,
+      "ground_truth_answer": "The Court held that the recount procedures ordered by the Florida Supreme Court, lacking uniform standards for determining voter intent across counties, violated the Equal Protection Clause, and that no constitutionally valid recount could be completed by the December 12 safe-harbor deadline.",
+      "generated_answer": "The Supreme Court held that the manual recounts ordered by the Florida Supreme Court were unconstitutional under the Equal Protection Clause. They stated that any recount aimed at meeting the December 12 \"safe-harbor\" date would violate the Equal Protection Clause because it required uniform treatment of votes. The Supreme Court further determined that the Florida Supreme Court's judgment ordering manual recounts was reversed [SOURCE 4].",
+      "sources": [
+        {
+          "index": 1,
+          "title": "Bush v. Gore",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep531/usrep531098/usrep531098.pdf",
+          "page": "p. 3",
+          "content_sha256": "ff42d63809ba197c56b2357939ad96c2c0feda30c94b79d794c5ffb2198b3e47",
+          "document_id": "86531ad0dd3244a856739bc22c143105"
+        },
+        {
+          "index": 2,
+          "title": "Bush v. Gore",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep531/usrep531098/usrep531098.pdf",
+          "page": "p. 5",
+          "content_sha256": "ff42d63809ba197c56b2357939ad96c2c0feda30c94b79d794c5ffb2198b3e47",
+          "document_id": "86531ad0dd3244a856739bc22c143105"
+        },
+        {
+          "index": 3,
+          "title": "Bush v. Gore",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep531/usrep531098/usrep531098.pdf",
+          "page": "p. 4",
+          "content_sha256": "ff42d63809ba197c56b2357939ad96c2c0feda30c94b79d794c5ffb2198b3e47",
+          "document_id": "86531ad0dd3244a856739bc22c143105"
+        },
+        {
+          "index": 4,
+          "title": "Bush v. Gore",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep531/usrep531098/usrep531098.pdf",
+          "page": "p. 1",
+          "content_sha256": "ff42d63809ba197c56b2357939ad96c2c0feda30c94b79d794c5ffb2198b3e47",
+          "document_id": "86531ad0dd3244a856739bc22c143105"
+        },
+        {
+          "index": 5,
+          "title": "Bush v. Gore",
+          "source_url": "https://tile.loc.gov/storage-services/service/ll/usrep/usrep531/usrep531098/usrep531098.pdf",
+          "page": "p. 5",
+          "content_sha256": "ff42d63809ba197c56b2357939ad96c2c0feda30c94b79d794c5ffb2198b3e47",
+          "document_id": "86531ad0dd3244a856739bc22c143105"
+        }
+      ],
+      "cited_any": true,
+      "cited_indices": [
+        4
+      ],
+      "cited_expected_document": true,
+      "judge_verdict": "faithful",
+      "judge_explanation": "Matches the equal-protection and safe-harbor-deadline holding."
+    }
+  ]
+}

@@ -1,0 +1,624 @@
+corpus_policy:
+  total_documents: 100
+  required_counts:
+    act: 27
+    court_judgment: 27
+    pov: 26
+    tax_document: 20
+
+sources:
+  # 27 Acts / statutory laws from govinfo public-law PDFs.
+  - url: https://www.govinfo.gov/content/pkg/PLAW-117publ2/pdf/PLAW-117publ2.pdf
+    document_type: act
+    title: "American Rescue Plan Act of 2021"
+    jurisdiction: US
+    official_citation: "Pub. L. 117-2"
+    tags: [act, public-law, economic-relief]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-117publ58/pdf/PLAW-117publ58.pdf
+    document_type: act
+    title: "Infrastructure Investment and Jobs Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 117-58"
+    tags: [act, public-law, infrastructure]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-117publ169/pdf/PLAW-117publ169.pdf
+    document_type: act
+    title: "Inflation Reduction Act of 2022"
+    jurisdiction: US
+    official_citation: "Pub. L. 117-169"
+    tags: [act, public-law, tax, climate]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-117publ328/pdf/PLAW-117publ328.pdf
+    document_type: act
+    title: "Consolidated Appropriations Act, 2023"
+    jurisdiction: US
+    official_citation: "Pub. L. 117-328"
+    tags: [act, public-law, appropriations]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-117publ103/pdf/PLAW-117publ103.pdf
+    document_type: act
+    title: "Postal Service Reform Act of 2022"
+    jurisdiction: US
+    official_citation: "Pub. L. 117-103"
+    tags: [act, public-law, postal-service]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-117publ159/pdf/PLAW-117publ159.pdf
+    document_type: act
+    title: "Bipartisan Safer Communities Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 117-159"
+    tags: [act, public-law, public-safety]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-117publ263/pdf/PLAW-117publ263.pdf
+    document_type: act
+    title: "James M. Inhofe National Defense Authorization Act for Fiscal Year 2023"
+    jurisdiction: US
+    official_citation: "Pub. L. 117-263"
+    tags: [act, public-law, defense]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-118publ5/pdf/PLAW-118publ5.pdf
+    document_type: act
+    title: "Fiscal Responsibility Act of 2023"
+    jurisdiction: US
+    official_citation: "Pub. L. 118-5"
+    tags: [act, public-law, budget]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-118publ22/pdf/PLAW-118publ22.pdf
+    document_type: act
+    title: "Continuing Appropriations Act, 2024 and Other Extensions Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 118-22"
+    tags: [act, public-law, appropriations]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-118publ31/pdf/PLAW-118publ31.pdf
+    document_type: act
+    title: "National Defense Authorization Act for Fiscal Year 2024"
+    jurisdiction: US
+    official_citation: "Pub. L. 118-31"
+    tags: [act, public-law, defense]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-118publ47/pdf/PLAW-118publ47.pdf
+    document_type: act
+    title: "Consolidated Appropriations Act, 2024"
+    jurisdiction: US
+    official_citation: "Pub. L. 118-47"
+    tags: [act, public-law, appropriations]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-118publ50/pdf/PLAW-118publ50.pdf
+    document_type: act
+    title: "Further Consolidated Appropriations Act, 2024"
+    jurisdiction: US
+    official_citation: "Pub. L. 118-50"
+    tags: [act, public-law, appropriations]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-116publ136/pdf/PLAW-116publ136.pdf
+    document_type: act
+    title: "Coronavirus Aid, Relief, and Economic Security Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 116-136"
+    tags: [act, public-law, economic-relief]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-116publ260/pdf/PLAW-116publ260.pdf
+    document_type: act
+    title: "Consolidated Appropriations Act, 2021"
+    jurisdiction: US
+    official_citation: "Pub. L. 116-260"
+    tags: [act, public-law, appropriations]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-115publ97/pdf/PLAW-115publ97.pdf
+    document_type: act
+    title: "Tax Cuts and Jobs Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 115-97"
+    tags: [act, public-law, tax]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-111publ148/pdf/PLAW-111publ148.pdf
+    document_type: act
+    title: "Patient Protection and Affordable Care Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 111-148"
+    tags: [act, public-law, health-care]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-111publ152/pdf/PLAW-111publ152.pdf
+    document_type: act
+    title: "Health Care and Education Reconciliation Act of 2010"
+    jurisdiction: US
+    official_citation: "Pub. L. 111-152"
+    tags: [act, public-law, health-care]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-111publ203/pdf/PLAW-111publ203.pdf
+    document_type: act
+    title: "Dodd-Frank Wall Street Reform and Consumer Protection Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 111-203"
+    tags: [act, public-law, financial-regulation]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-110publ343/pdf/PLAW-110publ343.pdf
+    document_type: act
+    title: "Emergency Economic Stabilization Act of 2008"
+    jurisdiction: US
+    official_citation: "Pub. L. 110-343"
+    tags: [act, public-law, financial-stability]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-107publ56/pdf/PLAW-107publ56.pdf
+    document_type: act
+    title: "USA PATRIOT Act"
+    jurisdiction: US
+    official_citation: "Pub. L. 107-56"
+    tags: [act, public-law, national-security]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-107publ204/pdf/PLAW-107publ204.pdf
+    document_type: act
+    title: "Sarbanes-Oxley Act of 2002"
+    jurisdiction: US
+    official_citation: "Pub. L. 107-204"
+    tags: [act, public-law, securities]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-109publ2/pdf/PLAW-109publ2.pdf
+    document_type: act
+    title: "Class Action Fairness Act of 2005"
+    jurisdiction: US
+    official_citation: "Pub. L. 109-2"
+    tags: [act, public-law, civil-procedure]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-104publ191/pdf/PLAW-104publ191.pdf
+    document_type: act
+    title: "Health Insurance Portability and Accountability Act of 1996"
+    jurisdiction: US
+    official_citation: "Pub. L. 104-191"
+    tags: [act, public-law, health-privacy]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-104publ104/pdf/PLAW-104publ104.pdf
+    document_type: act
+    title: "Telecommunications Act of 1996"
+    jurisdiction: US
+    official_citation: "Pub. L. 104-104"
+    tags: [act, public-law, telecommunications]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-103publ66/pdf/PLAW-103publ66.pdf
+    document_type: act
+    title: "Omnibus Budget Reconciliation Act of 1993"
+    jurisdiction: US
+    official_citation: "Pub. L. 103-66"
+    tags: [act, public-law, budget, tax]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-101publ336/pdf/PLAW-101publ336.pdf
+    document_type: act
+    title: "Americans with Disabilities Act of 1990"
+    jurisdiction: US
+    official_citation: "Pub. L. 101-336"
+    tags: [act, public-law, civil-rights]
+  - url: https://www.govinfo.gov/content/pkg/PLAW-99publ514/pdf/PLAW-99publ514.pdf
+    document_type: act
+    title: "Tax Reform Act of 1986"
+    jurisdiction: US
+    official_citation: "Pub. L. 99-514"
+    tags: [act, public-law, tax]
+
+  # 27 Court judgments from Library of Congress U.S. Reports PDFs.
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep005/usrep005137/usrep005137.pdf
+    document_type: court_judgment
+    title: "Marbury v. Madison"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1803-02-24"
+    official_citation: "5 U.S. 137"
+    tags: [court-judgment, constitutional-law, judicial-review]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep017/usrep017316/usrep017316.pdf
+    document_type: court_judgment
+    title: "McCulloch v. Maryland"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1819-03-06"
+    official_citation: "17 U.S. 316"
+    tags: [court-judgment, constitutional-law, federalism]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep022/usrep022001/usrep022001.pdf
+    document_type: court_judgment
+    title: "Gibbons v. Ogden"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1824-03-02"
+    official_citation: "22 U.S. 1"
+    tags: [court-judgment, commerce-clause]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep060/usrep060393/usrep060393.pdf
+    document_type: court_judgment
+    title: "Dred Scott v. Sandford"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1857-03-06"
+    official_citation: "60 U.S. 393"
+    tags: [court-judgment, constitutional-law]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep163/usrep163537/usrep163537.pdf
+    document_type: court_judgment
+    title: "Plessy v. Ferguson"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1896-05-18"
+    official_citation: "163 U.S. 537"
+    tags: [court-judgment, civil-rights, equal-protection]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep249/usrep249047/usrep249047.pdf
+    document_type: court_judgment
+    title: "Schenck v. United States"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1919-03-03"
+    official_citation: "249 U.S. 47"
+    tags: [court-judgment, first-amendment]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep323/usrep323214/usrep323214.pdf
+    document_type: court_judgment
+    title: "Korematsu v. United States"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1944-12-18"
+    official_citation: "323 U.S. 214"
+    tags: [court-judgment, constitutional-law, equal-protection]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep347/usrep347483/usrep347483.pdf
+    document_type: court_judgment
+    title: "Brown v. Board of Education"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1954-05-17"
+    official_citation: "347 U.S. 483"
+    tags: [court-judgment, civil-rights, equal-protection]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep367/usrep367643/usrep367643.pdf
+    document_type: court_judgment
+    title: "Mapp v. Ohio"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1961-06-19"
+    official_citation: "367 U.S. 643"
+    tags: [court-judgment, fourth-amendment, criminal-procedure]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep372/usrep372335/usrep372335.pdf
+    document_type: court_judgment
+    title: "Gideon v. Wainwright"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1963-03-18"
+    official_citation: "372 U.S. 335"
+    tags: [court-judgment, criminal-procedure, right-to-counsel]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep376/usrep376254/usrep376254.pdf
+    document_type: court_judgment
+    title: "New York Times Co. v. Sullivan"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1964-03-09"
+    official_citation: "376 U.S. 254"
+    tags: [court-judgment, first-amendment, defamation]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep384/usrep384436/usrep384436.pdf
+    document_type: court_judgment
+    title: "Miranda v. Arizona"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1966-06-13"
+    official_citation: "384 U.S. 436"
+    tags: [court-judgment, criminal-procedure, fifth-amendment]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep392/usrep392001/usrep392001.pdf
+    document_type: court_judgment
+    title: "Terry v. Ohio"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1968-06-10"
+    official_citation: "392 U.S. 1"
+    tags: [court-judgment, fourth-amendment, criminal-procedure]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep393/usrep393503/usrep393503.pdf
+    document_type: court_judgment
+    title: "Tinker v. Des Moines Independent Community School District"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1969-02-24"
+    official_citation: "393 U.S. 503"
+    tags: [court-judgment, first-amendment, education]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep395/usrep395444/usrep395444.pdf
+    document_type: court_judgment
+    title: "Brandenburg v. Ohio"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1969-06-09"
+    official_citation: "395 U.S. 444"
+    tags: [court-judgment, first-amendment]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep410/usrep410113/usrep410113.pdf
+    document_type: court_judgment
+    title: "Roe v. Wade"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1973-01-22"
+    official_citation: "410 U.S. 113"
+    tags: [court-judgment, privacy, due-process]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep418/usrep418683/usrep418683.pdf
+    document_type: court_judgment
+    title: "United States v. Nixon"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1974-07-24"
+    official_citation: "418 U.S. 683"
+    tags: [court-judgment, executive-privilege]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep438/usrep438265/usrep438265.pdf
+    document_type: court_judgment
+    title: "Regents of the University of California v. Bakke"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1978-06-28"
+    official_citation: "438 U.S. 265"
+    tags: [court-judgment, equal-protection, education]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep467/usrep467837/usrep467837.pdf
+    document_type: court_judgment
+    title: "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc."
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1984-06-25"
+    official_citation: "467 U.S. 837"
+    tags: [court-judgment, administrative-law]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep491/usrep491397/usrep491397.pdf
+    document_type: court_judgment
+    title: "Texas v. Johnson"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1989-06-21"
+    official_citation: "491 U.S. 397"
+    tags: [court-judgment, first-amendment]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep505/usrep505833/usrep505833.pdf
+    document_type: court_judgment
+    title: "Planned Parenthood of Southeastern Pennsylvania v. Casey"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1992-06-29"
+    official_citation: "505 U.S. 833"
+    tags: [court-judgment, due-process, privacy]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep514/usrep514549/usrep514549.pdf
+    document_type: court_judgment
+    title: "United States v. Lopez"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "1995-04-26"
+    official_citation: "514 U.S. 549"
+    tags: [court-judgment, commerce-clause, federalism]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep531/usrep531098/usrep531098.pdf
+    document_type: court_judgment
+    title: "Bush v. Gore"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "2000-12-12"
+    official_citation: "531 U.S. 98"
+    tags: [court-judgment, election-law, equal-protection]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep539/usrep539558/usrep539558.pdf
+    document_type: court_judgment
+    title: "Lawrence v. Texas"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "2003-06-26"
+    official_citation: "539 U.S. 558"
+    tags: [court-judgment, due-process, privacy]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep554/usrep554570/usrep554570.pdf
+    document_type: court_judgment
+    title: "District of Columbia v. Heller"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "2008-06-26"
+    official_citation: "554 U.S. 570"
+    tags: [court-judgment, second-amendment]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep558/usrep558310/usrep558310.pdf
+    document_type: court_judgment
+    title: "Citizens United v. Federal Election Commission"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "2010-01-21"
+    official_citation: "558 U.S. 310"
+    tags: [court-judgment, first-amendment, campaign-finance]
+  - url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep567/usrep567519/usrep567519.pdf
+    document_type: court_judgment
+    title: "National Federation of Independent Business v. Sebelius"
+    jurisdiction: US
+    court: "Supreme Court of the United States"
+    decision_date: "2012-06-28"
+    official_citation: "567 U.S. 519"
+    tags: [court-judgment, health-care, tax, commerce-clause]
+
+  # 26 POV / legal explainer and commentary pages from Cornell LII Wex.
+  - url: https://www.law.cornell.edu/wex/administrative_law
+    document_type: pov
+    title: "Administrative Law"
+    jurisdiction: US
+    tags: [pov, commentary, administrative-law, wex]
+  - url: https://www.law.cornell.edu/wex/antitrust
+    document_type: pov
+    title: "Antitrust"
+    jurisdiction: US
+    tags: [pov, commentary, antitrust, wex]
+  - url: https://www.law.cornell.edu/wex/bankruptcy
+    document_type: pov
+    title: "Bankruptcy"
+    jurisdiction: US
+    tags: [pov, commentary, bankruptcy, wex]
+  - url: https://www.law.cornell.edu/wex/civil_procedure
+    document_type: pov
+    title: "Civil Procedure"
+    jurisdiction: US
+    tags: [pov, commentary, civil-procedure, wex]
+  - url: https://www.law.cornell.edu/wex/constitutional_law
+    document_type: pov
+    title: "Constitutional Law"
+    jurisdiction: US
+    tags: [pov, commentary, constitutional-law, wex]
+  - url: https://www.law.cornell.edu/wex/contract
+    document_type: pov
+    title: "Contract"
+    jurisdiction: US
+    tags: [pov, commentary, contract-law, wex]
+  - url: https://www.law.cornell.edu/wex/corporate_law
+    document_type: pov
+    title: "Corporate Law"
+    jurisdiction: US
+    tags: [pov, commentary, corporate-law, wex]
+  - url: https://www.law.cornell.edu/wex/criminal_law
+    document_type: pov
+    title: "Criminal Law"
+    jurisdiction: US
+    tags: [pov, commentary, criminal-law, wex]
+  - url: https://www.law.cornell.edu/wex/due_process
+    document_type: pov
+    title: "Due Process"
+    jurisdiction: US
+    tags: [pov, commentary, due-process, wex]
+  - url: https://www.law.cornell.edu/wex/equal_protection
+    document_type: pov
+    title: "Equal Protection"
+    jurisdiction: US
+    tags: [pov, commentary, equal-protection, wex]
+  - url: https://www.law.cornell.edu/wex/evidence
+    document_type: pov
+    title: "Evidence"
+    jurisdiction: US
+    tags: [pov, commentary, evidence, wex]
+  - url: https://www.law.cornell.edu/wex/federalism
+    document_type: pov
+    title: "Federalism"
+    jurisdiction: US
+    tags: [pov, commentary, federalism, wex]
+  - url: https://www.law.cornell.edu/wex/first_amendment
+    document_type: pov
+    title: "First Amendment"
+    jurisdiction: US
+    tags: [pov, commentary, first-amendment, wex]
+  - url: https://www.law.cornell.edu/wex/fourth_amendment
+    document_type: pov
+    title: "Fourth Amendment"
+    jurisdiction: US
+    tags: [pov, commentary, fourth-amendment, wex]
+  - url: https://www.law.cornell.edu/wex/habeas_corpus
+    document_type: pov
+    title: "Habeas Corpus"
+    jurisdiction: US
+    tags: [pov, commentary, habeas-corpus, wex]
+  - url: https://www.law.cornell.edu/wex/immigration
+    document_type: pov
+    title: "Immigration"
+    jurisdiction: US
+    tags: [pov, commentary, immigration, wex]
+  - url: https://www.law.cornell.edu/wex/intellectual_property
+    document_type: pov
+    title: "Intellectual Property"
+    jurisdiction: US
+    tags: [pov, commentary, intellectual-property, wex]
+  - url: https://www.law.cornell.edu/wex/jurisdiction
+    document_type: pov
+    title: "Jurisdiction"
+    jurisdiction: US
+    tags: [pov, commentary, jurisdiction, wex]
+  - url: https://www.law.cornell.edu/wex/judicial_review
+    document_type: pov
+    title: "Judicial Review"
+    jurisdiction: US
+    tags: [pov, commentary, judicial-review, wex]
+  - url: https://www.law.cornell.edu/wex/labor_law
+    document_type: pov
+    title: "Labor Law"
+    jurisdiction: US
+    tags: [pov, commentary, labor-law, wex]
+  - url: https://www.law.cornell.edu/wex/legal_ethics
+    document_type: pov
+    title: "Legal Ethics"
+    jurisdiction: US
+    tags: [pov, commentary, legal-ethics, wex]
+  - url: https://www.law.cornell.edu/wex/negligence
+    document_type: pov
+    title: "Negligence"
+    jurisdiction: US
+    tags: [pov, commentary, negligence, wex]
+  - url: https://www.law.cornell.edu/wex/privacy
+    document_type: pov
+    title: "Privacy"
+    jurisdiction: US
+    tags: [pov, commentary, privacy, wex]
+  - url: https://www.law.cornell.edu/wex/securities
+    document_type: pov
+    title: "Securities"
+    jurisdiction: US
+    tags: [pov, commentary, securities, wex]
+  - url: https://www.law.cornell.edu/wex/tax
+    document_type: pov
+    title: "Tax"
+    jurisdiction: US
+    tags: [pov, commentary, tax, wex]
+  - url: https://www.law.cornell.edu/wex/tort
+    document_type: pov
+    title: "Tort"
+    jurisdiction: US
+    tags: [pov, commentary, tort, wex]
+
+  # 20 tax documents from IRS publication PDFs.
+  - url: https://www.irs.gov/pub/irs-pdf/p15.pdf
+    document_type: tax_document
+    title: "Publication 15 (Circular E), Employer's Tax Guide"
+    jurisdiction: US
+    tags: [tax-document, irs, employment-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p15a.pdf
+    document_type: tax_document
+    title: "Publication 15-A, Employer's Supplemental Tax Guide"
+    jurisdiction: US
+    tags: [tax-document, irs, employment-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p15b.pdf
+    document_type: tax_document
+    title: "Publication 15-B, Employer's Tax Guide to Fringe Benefits"
+    jurisdiction: US
+    tags: [tax-document, irs, fringe-benefits]
+  - url: https://www.irs.gov/pub/irs-pdf/p17.pdf
+    document_type: tax_document
+    title: "Publication 17, Your Federal Income Tax"
+    jurisdiction: US
+    tags: [tax-document, irs, income-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p51.pdf
+    document_type: tax_document
+    title: "Publication 51, Agricultural Employer's Tax Guide"
+    jurisdiction: US
+    tags: [tax-document, irs, agriculture, employment-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p54.pdf
+    document_type: tax_document
+    title: "Publication 54, Tax Guide for U.S. Citizens and Resident Aliens Abroad"
+    jurisdiction: US
+    tags: [tax-document, irs, international-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p80.pdf
+    document_type: tax_document
+    title: "Publication 80, Federal Tax Guide for Employers in U.S. Virgin Islands, Guam, American Samoa, and CNMI"
+    jurisdiction: US
+    tags: [tax-document, irs, employment-tax, territories]
+  - url: https://www.irs.gov/pub/irs-pdf/p225.pdf
+    document_type: tax_document
+    title: "Publication 225, Farmer's Tax Guide"
+    jurisdiction: US
+    tags: [tax-document, irs, agriculture, income-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p334.pdf
+    document_type: tax_document
+    title: "Publication 334, Tax Guide for Small Business"
+    jurisdiction: US
+    tags: [tax-document, irs, small-business]
+  - url: https://www.irs.gov/pub/irs-pdf/p463.pdf
+    document_type: tax_document
+    title: "Publication 463, Travel, Gift, and Car Expenses"
+    jurisdiction: US
+    tags: [tax-document, irs, deductions]
+  - url: https://www.irs.gov/pub/irs-pdf/p501.pdf
+    document_type: tax_document
+    title: "Publication 501, Dependents, Standard Deduction, and Filing Information"
+    jurisdiction: US
+    tags: [tax-document, irs, filing]
+  - url: https://www.irs.gov/pub/irs-pdf/p502.pdf
+    document_type: tax_document
+    title: "Publication 502, Medical and Dental Expenses"
+    jurisdiction: US
+    tags: [tax-document, irs, deductions, medical-expenses]
+  - url: https://www.irs.gov/pub/irs-pdf/p503.pdf
+    document_type: tax_document
+    title: "Publication 503, Child and Dependent Care Expenses"
+    jurisdiction: US
+    tags: [tax-document, irs, credits]
+  - url: https://www.irs.gov/pub/irs-pdf/p504.pdf
+    document_type: tax_document
+    title: "Publication 504, Divorced or Separated Individuals"
+    jurisdiction: US
+    tags: [tax-document, irs, family-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p505.pdf
+    document_type: tax_document
+    title: "Publication 505, Tax Withholding and Estimated Tax"
+    jurisdiction: US
+    tags: [tax-document, irs, withholding]
+  - url: https://www.irs.gov/pub/irs-pdf/p514.pdf
+    document_type: tax_document
+    title: "Publication 514, Foreign Tax Credit for Individuals"
+    jurisdiction: US
+    tags: [tax-document, irs, foreign-tax-credit]
+  - url: https://www.irs.gov/pub/irs-pdf/p515.pdf
+    document_type: tax_document
+    title: "Publication 515, Withholding of Tax on Nonresident Aliens and Foreign Entities"
+    jurisdiction: US
+    tags: [tax-document, irs, international-tax, withholding]
+  - url: https://www.irs.gov/pub/irs-pdf/p519.pdf
+    document_type: tax_document
+    title: "Publication 519, U.S. Tax Guide for Aliens"
+    jurisdiction: US
+    tags: [tax-document, irs, international-tax]
+  - url: https://www.irs.gov/pub/irs-pdf/p521.pdf
+    document_type: tax_document
+    title: "Publication 521, Moving Expenses"
+    jurisdiction: US
+    tags: [tax-document, irs, deductions]
+  - url: https://www.irs.gov/pub/irs-pdf/p523.pdf
+    document_type: tax_document
+    title: "Publication 523, Selling Your Home"
+    jurisdiction: US
+    tags: [tax-document, irs, real-estate, income-tax]

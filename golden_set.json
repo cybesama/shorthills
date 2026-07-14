@@ -1,0 +1,342 @@
+[
+  {
+    "id": "gs-01",
+    "query": "Does racial segregation in public schools violate the Equal Protection Clause even if the physical facilities are equal?",
+    "ground_truth_answer": "Yes. In Brown v. Board of Education, the Supreme Court held that segregating white and Black children in public schools solely on the basis of race, even where physical facilities and other tangible factors are equal, denies Black children the equal protection of the laws guaranteed by the Fourteenth Amendment.",
+    "source_document": "Brown v. Board of Education",
+    "source_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-02",
+    "query": "What must police do before using statements from a custodial interrogation at trial, according to Miranda v. Arizona?",
+    "ground_truth_answer": "Before interrogating a person in custody, police must clearly inform them that they have the right to remain silent, that anything they say can be used against them in court, that they have the right to consult a lawyer and have the lawyer present during interrogation, and that a lawyer will be appointed for them if they cannot afford one. Statements obtained without these warnings cannot be used by the prosecution.",
+    "source_document": "Miranda v. Arizona",
+    "source_document_id": "208516a7f962568e815530beb6fd5356",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-03",
+    "query": "What did the Supreme Court hold about the scope of the Second Amendment in District of Columbia v. Heller?",
+    "ground_truth_answer": "The Court held that the Second Amendment protects an individual's right to possess a firearm unconnected with service in a militia, and to use that firearm for traditionally lawful purposes such as self-defense within the home.",
+    "source_document": "District of Columbia v. Heller",
+    "source_document_id": "26bfdd8832efa930da6bb4d1cb110bdf",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-04",
+    "query": "What did the Supreme Court hold about the EPA's 'plantwide' definition of stationary source in Chevron v. NRDC?",
+    "ground_truth_answer": "The Court held that the EPA's plantwide (bubble concept) definition of the statutory term 'stationary source' was a permissible construction of the Clean Air Act, since Congress had not directly addressed the precise question at issue and the agency's interpretation was reasonable.",
+    "source_document": "Chevron U.S.A., Inc. v. Natural Resources Defense Council, Inc.",
+    "source_document_id": "0f1e1011af4c5fc2f124503502d51d3d",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-05",
+    "query": "Did burning the American flag as a form of political protest count as protected expression under the First Amendment in Texas v. Johnson?",
+    "ground_truth_answer": "Yes. The Court held that Johnson's flag burning was expressive conduct implicating the First Amendment, and that Texas's asserted interest in preventing breaches of the peace was not implicated because the government cannot assume that provocative expression will incite a riot.",
+    "source_document": "Texas v. Johnson",
+    "source_document_id": "0bd886529e387ecb36a4e5455b17d215",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-06",
+    "query": "In United States v. Nixon, did the Court treat the dispute between the Special Prosecutor and the President as a non-justiciable 'intra-branch dispute'?",
+    "ground_truth_answer": "No. The Court held that the mere assertion of an intra-branch dispute, without more, does not defeat federal jurisdiction, and that the dispute between the Special Prosecutor and the President presented a justiciable controversy.",
+    "source_document": "United States v. Nixon",
+    "source_document_id": "2e272da01a17d887ca68cbf606b97847",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-07",
+    "query": "What Code does the Tax Cuts and Jobs Act (Pub. L. 115-97) refer to when it amends 'the Code'?",
+    "ground_truth_answer": "Except as otherwise expressly provided, the Tax Cuts and Jobs Act states that any amendment or repeal expressed in terms of an amendment to, or repeal of, a section or provision is a reference to a section or provision of the Internal Revenue Code of 1986.",
+    "source_document": "Tax Cuts and Jobs Act",
+    "source_document_id": "33e05d45f4e16a6fdb6b54d48363b7be",
+    "document_type": "act"
+  },
+  {
+    "id": "gs-08",
+    "query": "What is the stated purpose of the Dodd-Frank Wall Street Reform and Consumer Protection Act?",
+    "ground_truth_answer": "Dodd-Frank was enacted to promote the financial stability of the United States by improving accountability and transparency in the financial system, to end 'too big to fail,' to protect the American taxpayer by ending bailouts, and to protect consumers from abusive financial services practices.",
+    "source_document": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+    "source_document_id": "c17a8356707664d8dba05aa28d94162e",
+    "document_type": "act"
+  },
+  {
+    "id": "gs-09",
+    "query": "What was the stated purpose of the USA PATRIOT Act of 2001?",
+    "ground_truth_answer": "The USA PATRIOT Act was enacted to deter and punish terrorist acts in the United States and around the world, and to enhance law enforcement investigatory tools.",
+    "source_document": "USA PATRIOT Act",
+    "source_document_id": "b6b2b4b7a6f1f7ce267a36d896f96f8c",
+    "document_type": "act"
+  },
+  {
+    "id": "gs-10",
+    "query": "What is the Sarbanes-Oxley Act of 2002 intended to protect, and how?",
+    "ground_truth_answer": "The Sarbanes-Oxley Act was enacted to protect investors by improving the accuracy and reliability of corporate disclosures made pursuant to the securities laws.",
+    "source_document": "Sarbanes-Oxley Act of 2002",
+    "source_document_id": "83f61c186b01558c9ca8d51a6f613a31",
+    "document_type": "act"
+  },
+  {
+    "id": "gs-11",
+    "query": "What did HIPAA (the Health Insurance Portability and Accountability Act of 1996) amend, and what were its goals?",
+    "ground_truth_answer": "HIPAA amended the Internal Revenue Code of 1986 to improve the portability and continuity of health insurance coverage in the group and individual markets, to combat waste, fraud, and abuse in health insurance and health care delivery, to promote the use of medical savings accounts, to improve access to long-term care services, and to simplify the administration of health insurance.",
+    "source_document": "Health Insurance Portability and Accountability Act of 1996",
+    "source_document_id": "d7f74341fa3f29a94844facee76c6b25",
+    "document_type": "act"
+  },
+  {
+    "id": "gs-12",
+    "query": "What does the Fourth Amendment protect against, according to the Wex commentary?",
+    "ground_truth_answer": "The Fourth Amendment protects the right of people to be secure in their persons, houses, papers, and effects against unreasonable searches and seizures, and requires that warrants be supported by probable cause and particularly describe the place to be searched and the persons or things to be seized. Its ultimate goal is to protect privacy and freedom from unreasonable government intrusion, though it only protects against unreasonable searches and seizures done by the government.",
+    "source_document": "Fourth Amendment",
+    "source_document_id": "b5e5b339f79a01f954c9095a83c668bb",
+    "document_type": "pov"
+  },
+  {
+    "id": "gs-13",
+    "query": "What rights does the First Amendment protect, according to the Wex commentary?",
+    "ground_truth_answer": "The First Amendment protects freedom of religion and freedom of expression from government interference. It prohibits laws establishing a national religion, impeding the free exercise of religion, abridging freedom of speech, infringing the freedom of the press, interfering with the right to peaceably assemble, or prohibiting people from petitioning the government for redress of grievances.",
+    "source_document": "First Amendment",
+    "source_document_id": "3bb36888e04ae02454ebc647d133d491",
+    "document_type": "pov"
+  },
+  {
+    "id": "gs-14",
+    "query": "What is the constitutional source of the 'due process' requirement, and to whom does it apply?",
+    "ground_truth_answer": "Due process derives from the Fifth Amendment, which provides that no one shall be deprived of life, liberty, or property without due process of law by the federal government. The Fourteenth Amendment, ratified in 1868, uses the same words in its Due Process Clause to extend this obligation to the states.",
+    "source_document": "Due Process",
+    "source_document_id": "6a911d865959f6f5de1dfe501dc8f7d4",
+    "document_type": "pov"
+  },
+  {
+    "id": "gs-15",
+    "query": "What are the basic elements required for an agreement to be a legally enforceable contract, according to the Wex commentary?",
+    "ground_truth_answer": "The basic elements are mutual assent (offer and acceptance), consideration (something of value exchanged), capacity (such as minimum age and sound mind), and legality (a lawful purpose). In some states, a valid substitute can satisfy the consideration element.",
+    "source_document": "Contract",
+    "source_document_id": "eb9fc931682357429ab411dcbe3425fb",
+    "document_type": "pov"
+  },
+  {
+    "id": "gs-16",
+    "query": "What is the definition of negligence, according to the Wex commentary?",
+    "ground_truth_answer": "Negligence is the failure to behave with the level of care that a reasonable person would have exercised under the same circumstances. Both actions and, in some cases, omissions can be found negligent -- omissions only when the person had a duty to act. Negligence is a foundational concept of tort law.",
+    "source_document": "Negligence",
+    "source_document_id": "22d7ede3801ee8ddd62be165f37cb45e",
+    "document_type": "pov"
+  },
+  {
+    "id": "gs-17",
+    "query": "What are the Social Security and Medicare tax rates and the Social Security wage base limit described in IRS Publication 15 (Circular E)?",
+    "ground_truth_answer": "The Medicare tax rate is 1.45% each for the employee and employer, with no wage base limit for Medicare tax. The Social Security wage base limit is $184,500.",
+    "source_document": "Publication 15 (Circular E), Employer's Tax Guide",
+    "source_document_id": "3ea48ee6f69651ec5fafe3391f860e67",
+    "document_type": "tax_document"
+  },
+  {
+    "id": "gs-18",
+    "query": "What is the 2025 standard deduction for a single filer under age 65, according to IRS Publication 501?",
+    "ground_truth_answer": "For 2025, a single filer under age 65 has a standard deduction of $15,750.",
+    "source_document": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+    "source_document_id": "534a43b60e68ff4227788b6ddbcd8f3e",
+    "document_type": "tax_document"
+  },
+  {
+    "id": "gs-19",
+    "query": "What change did the One Big Beautiful Bill Act (OBBBA), P.L. 119-21, make to bonus depreciation according to Publication 463?",
+    "ground_truth_answer": "OBBBA amended Internal Revenue Code section 168(k) to provide taxpayers with a permanent 100% additional first-year (bonus) depreciation deduction for qualified property acquired and placed in service, and specified plants planted or grafted, after the applicable date.",
+    "source_document": "Publication 463, Travel, Gift, and Car Expenses",
+    "source_document_id": "d6b60e4fdced103e0dc7e55df7635ca4",
+    "document_type": "tax_document"
+  },
+  {
+    "id": "gs-20",
+    "query": "What is the self-employment (SE) tax rate for 2025, and how is it broken down, according to IRS Publication 334?",
+    "ground_truth_answer": "The 2025 SE tax rate on net earnings is 15.3%, consisting of 12.4% Social Security tax plus 2.9% Medicare tax. Only the first $176,100 of combined wages, tips, and net earnings is subject to the Social Security portion of SE tax in 2025.",
+    "source_document": "Publication 334, Tax Guide for Small Business",
+    "source_document_id": "873eb663a5630a72f872cb67ab445523",
+    "document_type": "tax_document"
+  },
+  {
+    "id": "gs-21",
+    "query": "According to Brown v. Board of Education, what was the earlier Supreme Court doctrine that the Court's ruling on school segregation overturned, and where did that doctrine originate?",
+    "ground_truth_answer": "Brown v. Board of Education overturned the 'separate but equal' doctrine that originated in Plessy v. Ferguson, 163 U.S. 537 (1896), holding that this doctrine has no place in the field of public education.",
+    "source_document": "Brown v. Board of Education",
+    "source_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Plessy v. Ferguson",
+    "graph_expected_document_id": "f894c21af6da3934f6285b504d4f1d18"
+  },
+  {
+    "id": "gs-22",
+    "query": "In Miranda v. Arizona, which earlier Supreme Court case did the Court rely on for the principle that appointment of counsel for indigent suspects is required?",
+    "ground_truth_answer": "Miranda v. Arizona ties the appointment of counsel for indigent suspects to Gideon v. Wainwright, 372 U.S. 335, alongside Douglas v. California, 372 U.S. 353.",
+    "source_document": "Miranda v. Arizona",
+    "source_document_id": "208516a7f962568e815530beb6fd5356",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Gideon v. Wainwright",
+    "graph_expected_document_id": "cc05b05c3d65159b07202df46f5c9e25"
+  },
+  {
+    "id": "gs-23",
+    "query": "What Fourth Amendment case does Miranda v. Arizona reference in discussing concerns about confessions obtained through unsupervised police interrogation?",
+    "ground_truth_answer": "Miranda v. Arizona references Mapp v. Ohio, 367 U.S. 643 (1961), in the context of Justice Harlan's dissent discussing concerns about confessions obtained at the unsupervised pleasure of the police.",
+    "source_document": "Miranda v. Arizona",
+    "source_document_id": "208516a7f962568e815530beb6fd5356",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Mapp v. Ohio",
+    "graph_expected_document_id": "e02342b1a2f646bc4993023717733954"
+  },
+  {
+    "id": "gs-24",
+    "query": "In Regents of the University of California v. Bakke, which earlier case is cited as an example of the Court applying a lenient standard of review to a racial classification?",
+    "ground_truth_answer": "Bakke cites Korematsu v. United States, 323 U.S. 214 (1944), alongside Hirabayashi v. United States, as an example where the Court sustained a racial classification even though it purported to apply a strict standard of review.",
+    "source_document": "Regents of the University of California v. Bakke",
+    "source_document_id": "a856f84f7b1f6a62f2130059d556b659",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Korematsu v. United States",
+    "graph_expected_document_id": "3594ce77874145b88ba4012d67d534fd"
+  },
+  {
+    "id": "gs-25",
+    "query": "According to Regents of the University of California v. Bakke, what series of decisions leading up to Brown v. Board of Education addressed racial segregation before Brown itself was decided?",
+    "ground_truth_answer": "Bakke references a series of decisions leading up to Brown v. Board of Education, 347 U.S. 483 (1954), including Morgan v. Virginia, Sweatt v. Painter, and McLaurin v. Oklahoma State Regents, noting that those decisions did not automatically end segregation.",
+    "source_document": "Regents of the University of California v. Bakke",
+    "source_document_id": "a856f84f7b1f6a62f2130059d556b659",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Brown v. Board of Education",
+    "graph_expected_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+  },
+  {
+    "id": "gs-26",
+    "query": "In Planned Parenthood v. Casey, what earlier decision does the Court reaffirm regarding the State's obligation concerning the life or health of the mother?",
+    "ground_truth_answer": "Casey reaffirms Roe v. Wade, 410 U.S. 113 (1973), specifically its explanation of the State's obligation to protect the life or health of the mother, applying stare decisis principles to that reaffirmation.",
+    "source_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+    "source_document_id": "511eaa258cc04b47ffd24a2fbf88915b",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Roe v. Wade",
+    "graph_expected_document_id": "09977b54ac4a5a198e9fa2c23c298b9c"
+  },
+  {
+    "id": "gs-27",
+    "query": "What historically erroneous decision does Planned Parenthood v. Casey cite as an example of a doctrine that 'lasted 58 years' before being corrected?",
+    "ground_truth_answer": "Casey cites Plessy v. Ferguson, 163 U.S. 537 (1896), as an example of an erroneous decision -- specifically its 'separate but equal' doctrine, which the opinion notes lasted 58 years after Plessy before being corrected.",
+    "source_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+    "source_document_id": "511eaa258cc04b47ffd24a2fbf88915b",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Plessy v. Ferguson",
+    "graph_expected_document_id": "f894c21af6da3934f6285b504d4f1d18"
+  },
+  {
+    "id": "gs-28",
+    "query": "What case does Planned Parenthood v. Casey cite as an example of the Court correctly correcting one of its own errors despite a generation having grown used to the earlier decision?",
+    "ground_truth_answer": "Casey cites Brown v. Board of Education, 347 U.S. 483 (1954), as an example where the Court corrected its error in rejecting the 'separate but equal' doctrine, alongside West Coast Hotel Co. v. Parrish overruling Adkins v. Children's Hospital.",
+    "source_document": "Planned Parenthood of Southeastern Pennsylvania v. Casey",
+    "source_document_id": "511eaa258cc04b47ffd24a2fbf88915b",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Brown v. Board of Education",
+    "graph_expected_document_id": "1ef0a513aa67f0d9b5eccee61e9f8461"
+  },
+  {
+    "id": "gs-29",
+    "query": "What earlier First Amendment case does Citizens United v. FEC cite for the principle that doubt should be resolved in favor of protecting speech rather than stifling it?",
+    "ground_truth_answer": "Citizens United cites New York Times Co. v. Sullivan, 376 U.S. 254, 269-270 (1964), for the principle that First Amendment standards must give the benefit of any doubt to protecting rather than stifling speech.",
+    "source_document": "Citizens United v. Federal Election Commission",
+    "source_document_id": "53dc4cdb77882ced76573611f0a2e676",
+    "document_type": "court_judgment",
+    "graph_expected_document": "New York Times Co. v. Sullivan",
+    "graph_expected_document_id": "cfea26cf2db331ac7ea29b4efcda6aa3"
+  },
+  {
+    "id": "gs-30",
+    "query": "According to Citizens United v. FEC, when did the Court first consider applying the First Amendment to speech restrictions other than prior restraints, and which case marked that point?",
+    "ground_truth_answer": "Citizens United states that the Court did not consider application of the First Amendment to speech restrictions other than prior restraints until 1919, in Schenck v. United States, 249 U.S. 47.",
+    "source_document": "Citizens United v. Federal Election Commission",
+    "source_document_id": "53dc4cdb77882ced76573611f0a2e676",
+    "document_type": "court_judgment",
+    "graph_expected_document": "Schenck v. United States",
+    "graph_expected_document_id": "3369f8fa2ef2897d548171c699bdb1e7"
+  },
+  {
+    "id": "gs-31",
+    "query": "What did the Supreme Court hold in Gideon v. Wainwright regarding the right to counsel for indigent defendants in state criminal trials?",
+    "ground_truth_answer": "The Court held that the right of an indigent defendant in a criminal trial to have the assistance of counsel is a fundamental right essential to a fair trial, and that Gideon's trial and conviction without the assistance of counsel violated the Fourteenth Amendment. The Court overruled Betts v. Brady, 316 U.S. 455, in reaching this holding.",
+    "source_document": "Gideon v. Wainwright",
+    "source_document_id": "cc05b05c3d65159b07202df46f5c9e25",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-32",
+    "query": "What did the Supreme Court hold in Mapp v. Ohio regarding evidence obtained through unconstitutional searches and seizures in state criminal trials?",
+    "ground_truth_answer": "The Court held that all evidence obtained by searches and seizures in violation of the Federal Constitution is inadmissible in a criminal trial in a state court, overruling Wolf v. Colorado, 338 U.S. 25, to the extent it held otherwise.",
+    "source_document": "Mapp v. Ohio",
+    "source_document_id": "e02342b1a2f646bc4993023717733954",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-33",
+    "query": "What standard did the Supreme Court apply in Terry v. Ohio to justify a police officer's pat-down search of a suspect for weapons?",
+    "ground_truth_answer": "The Court held that an officer who has reasonable cause to believe that a person he is investigating is armed and dangerous may conduct a limited pat-down of the outer clothing for weapons, for his own protection, even absent probable cause to arrest.",
+    "source_document": "Terry v. Ohio",
+    "source_document_id": "4e392beb08359789790fe686b59e23bc",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-34",
+    "query": "What did the Supreme Court hold in Tinker v. Des Moines Independent Community School District regarding students wearing armbands to school as a form of protest?",
+    "ground_truth_answer": "The Court held that the students' wearing of black armbands to protest the Vietnam War was quiet, passive, non-disruptive conduct protected by the Free Speech Clause of the First Amendment and the Due Process Clause of the Fourteenth Amendment, and that students do not shed their constitutional rights to freedom of speech at the schoolhouse gate.",
+    "source_document": "Tinker v. Des Moines Independent Community School District",
+    "source_document_id": "cdf662eeb52cb36fc397ec2c29eaa7ad",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-35",
+    "query": "What did the Supreme Court hold in Roe v. Wade regarding a woman's constitutional right of privacy and the decision to terminate a pregnancy?",
+    "ground_truth_answer": "The Court held that the constitutional right of privacy, whether founded in the Fourteenth Amendment's concept of personal liberty or the Ninth Amendment's reservation of rights to the people, is broad enough to encompass a woman's decision whether or not to terminate her pregnancy.",
+    "source_document": "Roe v. Wade",
+    "source_document_id": "09977b54ac4a5a198e9fa2c23c298b9c",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-36",
+    "query": "What standard did the Supreme Court establish in New York Times Co. v. Sullivan for public officials seeking damages for defamatory statements about their official conduct?",
+    "ground_truth_answer": "The Court held that a public official cannot recover damages for a defamatory falsehood relating to their official conduct unless they prove the statement was made with 'actual malice' -- that is, with knowledge that it was false or with reckless disregard of whether it was false or not.",
+    "source_document": "New York Times Co. v. Sullivan",
+    "source_document_id": "cfea26cf2db331ac7ea29b4efcda6aa3",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-37",
+    "query": "What did the Supreme Court hold in Korematsu v. United States regarding the wartime exclusion order affecting persons of Japanese ancestry?",
+    "ground_truth_answer": "The Court affirmed Korematsu's conviction, holding that the exclusion order under which he was convicted was valid even though evacuation and detention in an assembly center were inseparable from the exclusion itself.",
+    "source_document": "Korematsu v. United States",
+    "source_document_id": "3594ce77874145b88ba4012d67d534fd",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-38",
+    "query": "What did the Supreme Court hold in Gibbons v. Ogden regarding the scope of Congress's power to regulate commerce among the states?",
+    "ground_truth_answer": "The Court held that Congress's power over commerce with foreign nations and among the several states is as plenary and absolute, within its specified objects, as it would be in a single unified government, subject only to the restrictions found in the Constitution itself.",
+    "source_document": "Gibbons v. Ogden",
+    "source_document_id": "869c25cc86cc578a3de2d3d35ae027f1",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-39",
+    "query": "What principle did the Supreme Court establish in McCulloch v. Maryland regarding a state's power to tax an instrumentality of the federal government?",
+    "ground_truth_answer": "The Court held that the power to tax involves the power to destroy, and that a state may not tax an instrumentality of the federal government such as the Bank of the United States, because doing so would allow one government to control and potentially defeat the constitutional measures of another government that is supreme over it.",
+    "source_document": "McCulloch v. Maryland",
+    "source_document_id": "3d5dc99011658d66e8ccf649567d6113",
+    "document_type": "court_judgment"
+  },
+  {
+    "id": "gs-40",
+    "query": "What did the Supreme Court hold in Bush v. Gore regarding the manual recount of ballots ordered by the Florida Supreme Court?",
+    "ground_truth_answer": "The Court held that the recount procedures ordered by the Florida Supreme Court, lacking uniform standards for determining voter intent across counties, violated the Equal Protection Clause, and that no constitutionally valid recount could be completed by the December 12 safe-harbor deadline.",
+    "source_document": "Bush v. Gore",
+    "source_document_id": "86531ad0dd3244a856739bc22c143105",
+    "document_type": "court_judgment"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "legal_english": {
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": ["lowercase", "possessive_english_stemmer", "legal_synonyms", "kstem"]
+        }
+      },
+      "filter": {
+        "possessive_english_stemmer": {
+          "type": "stemmer",
+          "language": "possessive_english"
+        },
+        "legal_synonyms": {
+          "type": "synonym_graph",
+          "lenient": true,
+          "synonyms": [
+            "internal revenue code,irc",
+            "united states code,usc",
+            "code of federal regulations,cfr"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "dynamic": "strict",
+    "properties": {
+      "chunk_id": {"type": "keyword"},
+      "document_id": {"type": "keyword"},
+      "document_type": {"type": "keyword"},
+      "title": {
+        "type": "text",
+        "analyzer": "legal_english",
+        "fields": {"exact": {"type": "keyword"}}
+      },
+      "source_url": {"type": "keyword", "index": false},
+      "content_sha256": {"type": "keyword"},
+      "page_start": {"type": "integer"},
+      "page_end": {"type": "integer"},
+      "page_labels": {"type": "keyword"},
+      "char_start": {"type": "long"},
+      "char_end": {"type": "long"},
+      "text": {"type": "text", "analyzer": "legal_english"},
+      "citation_strings": {
+        "type": "text",
+        "analyzer": "legal_english",
+        "fields": {"exact": {"type": "keyword"}}
+      },
+      "embedding": {
+        "type": "dense_vector",
+        "dims": 768,
+        "index": true,
+        "similarity": "cosine"
+      }
+    }
+  }
+}
+

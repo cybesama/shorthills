@@ -1,0 +1,24 @@
+.git
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+.claude
+
+# Full codebase stays in git for evaluator visibility; only the runtime
+# essentials (legal_ingest/, static/, output/graph_*.jsonl) go into the image.
+tests
+examples
+docker-compose.yml
+golden_set.json
+evaluation_assignment
+README.md
+output/okf
+output/run.json
+output/chunks.jsonl
+output/documents.jsonl
+
+.env
+.dockerignore
+Dockerfile

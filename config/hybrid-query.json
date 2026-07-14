@@ -1,0 +1,30 @@
+{
+  "retriever": {
+    "rrf": {
+      "retrievers": [
+        {
+          "standard": {
+            "query": {
+              "multi_match": {
+                "query": "{{query}}",
+                "fields": ["title^4", "citation_strings.exact^8", "text"]
+              }
+            }
+          }
+        },
+        {
+          "knn": {
+            "field": "embedding",
+            "query_vector": "{{query_vector}}",
+            "k": 50,
+            "num_candidates": 200
+          }
+        }
+      ],
+      "rank_window_size": 100,
+      "rank_constant": 60
+    }
+  },
+  "size": 10
+}
+
