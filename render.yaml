@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: shorthills-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: ELASTIC_URL
+        sync: false
+      - key: ELASTIC_API_KEY
+        sync: false
+      - key: ELASTIC_INDEX
+        value: legal-chunks-v1
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
